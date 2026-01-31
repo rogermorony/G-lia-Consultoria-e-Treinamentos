@@ -1,0 +1,606 @@
+/* ========================================
+   RESPONSIVE - MOBILE E TABLET
+   Site: Gália Consultoria
+   Breakpoints: Mobile (≤767px), Tablet (768-1024px), Desktop pequeno (≤1200px)
+   ======================================== */
+
+/* ========================================
+   DESKTOP PEQUENO (≤1200px)
+   ======================================== */
+@media (max-width: 1200px) {
+  
+  /* Container menor */
+  .header-wrap,
+  .service-hero-wrap,
+  .service-container {
+    padding: 0 32px;
+  }
+
+  /* FAQ ajuste */
+  .service-dive-faq {
+    max-width: 400px;
+  }
+
+  /* Curva decorativa menor */
+  .decorative-service-curve {
+    width: 80%;
+    margin-left: 200px;
+  }
+}
+
+/* ========================================
+   TABLET (768px - 1024px)
+   ======================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* HEADER */
+  .brand-logo {
+    height: 120px;
+    margin-top: 30px;
+  }
+
+  .header-wrap {
+    height: 100px;
+  }
+
+  .nav-list {
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .service-hero {
+    min-height: 500px;
+    padding: 140px 0 80px;
+  }
+
+  .service-hero-title {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  .service-hero-text {
+    font-size: 18px;
+  }
+
+  /* FOCO */
+  .service-content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-description {
+    width: 100%;
+    max-width: none;
+  }
+
+  .service-sidebar {
+    transform: translateY(0);
+    margin-top: 20px;
+  }
+
+  /* MERGULHO */
+  .service-dive {
+    padding: 80px 0 0 0;
+  }
+
+  .service-dive-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section-main-title-dive {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .service-description-dive {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .service-dive-faq {
+    margin-top: 0;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .service-dive-image {
+    max-width: 100%;
+    margin: 40px auto 0;
+  }
+
+  /* ACELERAR E VITÓRIA */
+  .service-accelerate-grid,
+  .service-victory-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-accelerate-text,
+  .service-victory-text {
+    max-width: 100%;
+  }
+
+  .service-victory-image img {
+    width: 100%;
+    max-width: 450px;
+    transform: translateY(0);
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Esconde curva decorativa */
+  .decorative-service-curve {
+    display: none;
+  }
+}
+
+/* ========================================
+   MOBILE (≤767px)
+   ======================================== */
+@media (max-width: 767px) {
+  
+  /* ========================================
+     VARIÁVEIS MOBILE
+     ======================================== */
+  :root {
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 36px;
+  }
+
+  /* ========================================
+     HEADER & NAVIGATION
+     ======================================== */
+  .site-header {
+    position: fixed;
+    background: rgba(33, 72, 100, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
+  .header-wrap {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .brand-logo {
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  /* Menu em coluna (ou implementar hamburger menu) */
+  .nav-list {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: rgba(33, 72, 100, 0.98);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 20px;
+    display: none; /* Esconde por padrão */
+  }
+
+  .nav-list.mobile-menu-open {
+    display: flex;
+  }
+
+  .nav-list li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link {
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* Botão mobile */
+  .btn-contact {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Dropdown mobile */
+  .nav-item-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 0 10px 20px;
+    display: none;
+  }
+
+  .nav-item-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-link {
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  /* ========================================
+     BOTÕES
+     ======================================== */
+  .btn {
+    font-size: 14px;
+    padding: 12px 40px;
+  }
+
+  .btn-outline {
+    padding: 10px 30px;
+  }
+
+  /* ========================================
+     HERO SECTION
+     ======================================== */
+  .service-hero {
+    min-height: auto;
+    padding: 120px 0 60px; /* Espaço pro header fixo */
+  }
+
+  .service-hero-wrap {
+    padding: 0 20px;
+  }
+
+  .service-hero-content {
+    max-width: 100%;
+  }
+
+  .service-hero-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .service-hero-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Wave menor */
+  .wave-divider {
+    height: 40px;
+  }
+
+  /* ========================================
+     SEÇÃO: FOCO
+     ======================================== */
+  .service-focus {
+    padding: 40px 0;
+  }
+
+  .service-container {
+    padding: 0 20px;
+  }
+
+  .section-label {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .section-main-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .service-content-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 24px;
+  }
+
+  .service-description {
+    font-size: 16px;
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+  }
+
+  /* Sidebar CTA */
+  .service-sidebar {
+    transform: translateY(0);
+    margin-top: 20px;
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .service-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .service-cta-icons {
+    gap: 20px;
+  }
+
+  .service-cta-icons ion-icon {
+    font-size: 32px;
+  }
+
+  /* ========================================
+     SEÇÃO: MERGULHO
+     ======================================== */
+  .service-dive {
+    padding: 60px 0 0 0;
+  }
+
+  .service-dive-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .section-main-title-dive {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .service-description-dive {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  /* FAQ Mobile */
+  .service-dive-faq {
+    margin-top: 0;
+    height: auto;
+    max-width: 100%;
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .service-dive-faq h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .faq-list {
+    max-height: none; /* Remove limite de altura */
+  }
+
+  .faq-question {
+    font-size: 15px;
+    padding: 14px 0;
+  }
+
+  .faq-answer p {
+    font-size: 14px;
+    padding-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 500px; /* Maior para mobile */
+  }
+
+  /* Imagem Mergulho */
+  .service-dive-image {
+    max-width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .service-dive-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  /* ========================================
+     SEÇÃO: ACELERAR
+     ======================================== */
+  .service-accelerate {
+    padding: 60px 0;
+  }
+
+  .service-accelerate-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .service-accelerate-text {
+    max-width: 100%;
+  }
+
+  /* Esconde linha decorativa */
+  .decorative-service-curve {
+    display: none;
+  }
+
+  /* ========================================
+     SEÇÃO: VITÓRIA
+     ======================================== */
+  .service-victory {
+    padding: 60px 0;
+  }
+
+  .service-victory-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .service-victory-text {
+    max-width: 100%;
+  }
+
+  .service-victory-image img {
+    width: 100%;
+    max-width: 100%;
+    transform: translateY(0);
+    margin: 0 auto;
+    display: block;
+    border-radius: 16px;
+  }
+
+  .service-victory-text .btn {
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  /* ========================================
+     FOOTER
+     ======================================== */
+  .site-footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-main-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 200px;
+    margin: 0 auto 20px;
+  }
+
+  .footer-brand .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-social-wrapper {
+    margin-top: 20px;
+  }
+
+  .footer-content-right {
+    width: 100%;
+  }
+
+  .footer-newsletter {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-newsletter .btn {
+    width: 100%;
+  }
+
+  .footer-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .disclaimer-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+}
+
+/* ========================================
+   MOBILE PEQUENO (≤480px)
+   ======================================== */
+@media (max-width: 480px) {
+  
+  /* Ajustes extras para telas muito pequenas */
+  .service-hero-title {
+    font-size: 24px;
+  }
+
+  .section-main-title-dive {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .service-dive-faq,
+  .service-sidebar {
+    padding: 20px;
+  }
+}
+
+/* ========================================
+   LANDSCAPE MOBILE (altura menor)
+   ======================================== */
+@media (max-height: 600px) and (orientation: landscape) {
+  
+  .service-hero {
+    min-height: auto;
+    padding: 100px 0 40px;
+  }
+
+  .service-hero-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* ========================================
+   AJUSTES DE ACESSIBILIDADE
+   ======================================== */
+
+/* Aumenta área de toque em mobile */
+@media (max-width: 767px) {
+  .nav-link,
+  .dropdown-link,
+  .faq-question,
+  .btn {
+    min-height: 44px; /* Tamanho mínimo recomendado para toque */
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Focus visível */
+@media (max-width: 767px) {
+  *:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
