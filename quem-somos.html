@@ -6,56 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- SEO: Título e Meta Tags -->
-  <title>Quem Somos - Gália Consultoria e Treinamentos</title>
+  <!-- SEO: TÍTULO E META TAGS -->
+  <title>Sobre Nós - Gália Consultoria | 23 Anos em Sustentabilidade e ESG</title>
   <meta name="description"
-    content="Conheça a Gália Consultoria: especialistas em ESG, sustentabilidade e relatórios corporativos com anos de experiência no mercado.">
-  <meta name="keywords" content="consultoria em sustentabilidade, ESG, relatórios GRI, quem somos, equipe, experiência">
+    content="Conheça a Gália Consultoria: 23 anos de expertise em sustentabilidade e estratégias ESG. Diagnóstico, relatórios GRI/SASB, inventário de emissões e investimento social estratégico.">
+  <meta name="keywords"
+    content="consultoria ESG, sustentabilidade empresarial, GRI, SASB, dupla materialidade, inventário GEE, investimento social">
   <meta name="author" content="Gália Consultoria e Treinamentos">
   <meta name="robots" content="index, follow">
 
-  <!-- Fontes Google: Inter -->
+  <link rel="canonical" href="https://www.fullonline.net/quem-somos.html">
+
+
+  <!-- FONTES GOOGLE: INTER -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Estilos CSS -->
+  <!-- ESTILO CSS -->
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/globals.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
 
-  <!-- Favicon -->
+  <!-- FAVICON -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Open Graph: Compartilhamento em Redes Sociais -->
-  <meta property="og:title" content="Quem Somos - Gália Consultoria e Treinamentos">
+  <!-- OPEN GRAPH: COMPARTILHAMENTO EM REDES SOCIAIS -->
+  <meta property="og:title" content="Sobre a Gália Consultoria - Especialistas em ESG">
   <meta property="og:description"
-    content="Conheça a Gália Consultoria: especialistas em ESG, sustentabilidade e relatórios corporativos.">
+    content="23 anos transformando práticas sustentáveis em valor estratégico para organizações brasileiras.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.fullonline.net/quem-somos.html">
   <meta property="og:image" content="https://www.fullonline.net/src/imagens/galia-consultoria-e-treinamentos-og.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gália Consultoria e Treinamentos",
+  "url": "https://www.fullonline.net",
+  "logo": "https://www.fullonline.net/src/imagens/galia-consultoria-e-treinamentos-1.webp",
+  "description": "Consultoria especializada em sustentabilidade e estratégias ESG com 23 anos de atuação no mercado brasileiro",
+  "foundingDate": "2002",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Londrina",
+    "addressRegion": "PR",
+    "addressCountry": "BR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-43-98849-7777",
+    "email": "contato@galiaonline.net",
+    "contactType": "customer service",
+    "availableLanguage": "Portuguese"
+  },
+  "areaServed": "BR",
+  "knowsAbout": [
+    "ESG",
+    "Sustentabilidade",
+    "GRI",
+    "SASB",
+    "ODS",
+    "Governança Corporativa",
+    "Inventário de Emissões",
+    "Dupla Materialidade",
+    "Investimento Social"
+  ]
+}
+</script>
 </head>
 
 <body>
 
-<!-- ========================================
-       HEADER: Navegação Principal
+  <!-- ========================================
+       HEADER
        ======================================== -->
   <header class="site-header" role="banner">
     <div class="container header-wrap">
-      <!-- Logo -->
+      <!-- LOGO -->
       <a href="index.html" aria-label="Ir para o início">
         <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria" class="brand-logo">
       </a>
 
-      <!-- Menu de Navegação -->
+      <!-- BOTÃO HAMBURGUER -->
+      <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU DE NAVEGAÇÃO -->
       <nav id="nav-principal" aria-label="Navegação principal">
         <ul class="nav-list">
-          
+
           <!-- ITEM COM DROPDOWN -->
           <li class="nav-item-dropdown">
-            <a href="#servicos" class="nav-link nav-link-dropdown">Serviços</a>
-            <div class="dropdown-menu">
-              <a href="solucoes-climaticas.html" class="dropdown-link">Soluções Climáticas e Baseadas na Natureza</a>
+            <a href="#servicos" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
+              role="button">Serviços</a>
+            <div class="dropdown-menu" aria-label="Submenu de Serviços" role="menu">
+              <a href="solucoes-climaticas.html" class="dropdown-link" role="menuitem">Soluções Climáticas e Baseadas na
+                Natureza</a>
               <a href="seguranca-alimentar.html" class="dropdown-link">Segurança e qualidade alimentar</a>
               <a href="ciclo-vida.html" class="dropdown-link">Avaliação do Ciclo de Vida</a>
               <a href="relatorios-sustentabilidade.html" class="dropdown-link">Relatórios de sustentabilidade</a>
@@ -64,10 +115,10 @@
               <a href="treinamentos.html" class="dropdown-link">Treinamentos</a>
             </div>
           </li>
-          
-          <li><a href="#perspectivas" class="nav-link">Perspectivas</a></li>
+
+          <li><a href="#insights" class="nav-link">Insights</a></li>
           <li><a href="quem-somos.html" class="nav-link">Quem somos</a></li>
-          <li><a href="#contato" class="btn btn-primary btn-contact">Fale Conosco</a></li>
+          <li><a href="#contato" class="btn btn-primary btn-contact" role="button">Fale Conosco</a></li>
         </ul>
       </nav>
     </div>
@@ -75,35 +126,43 @@
 
   <main>
 
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
     <section class="about-hero">
 
-      <!-- IMAGEM FULL-BLEED (fora do container) -->
+      <!-- IMAGEM FULL-BLEED -->
       <div class="about-hero-image">
-        <img src="src/imagens/aboutpage.webp" alt="Ilustração representando mergulho e transformação"
-          class="hero-img" loading="eager" />
+        <picture>
+          <source srcset="src/imagens/aboutpage.webp" type="image/webp">
+          <img src="src/imagens/aboutpage.webp"
+            alt="Pássaro em habitat natural preservado - símbolo de biodiversidade e conservação ambiental"
+            class="hero-img" width="1920" height="1280" loading="eager">
+        </picture>
       </div>
 
-      <!-- CONTEÚDO CONTIDO -->
+      <!-- CONTEÚDO -->
       <div class="container about-hero-wrap">
         <div class="about-hero-content">
-          <h1 class="about-hero-title">Mergulhe</h1>
+          <h1 class="about-hero-title">Transforme</h1>
           <p class="about-hero-text">
-            Abraçamos o poder das empresas, dos governos e das organizações para
-            impulsionar mudanças transformadoras, combinando as diferentes
-            especialidades da nossa equipe e décadas de experiência em clima,
-            sustentabilidade e segurança alimentar.
+            Desde 2002, apoiamos empresas a transformar desafios ESG em vantagens
+            competitivas reais. Nossa equipe de especialistas altamente qualificados
+            utiliza metodologias reconhecidas globalmente para desenvolver estratégias
+            sustentáveis que impulsionam resultados de longo prazo.
           </p>
         </div>
       </div>
 
       <!-- WAVE -->
-      <svg class="wave-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+      <svg class="wave-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"
+        aria-hidden="true">
         <path d="M0,40 C240,10 480,10 720,30 C960,50 1200,50 1440,20 L1440,60 L0,60 Z" fill="#ffffff" />
       </svg>
 
     </section>
 
-    <!-- Seção: Missão e Visão -->
+    <!-- SEÇÃO: MISSÃO E VISÃO -->
     <section class="mission-vision-section">
       <div class="container mission-vision-container">
 
@@ -113,14 +172,20 @@
           <div class="mission-content">
             <div class="mission-image-wrapper">
               <div class="image-background blue" aria-hidden="true"></div>
-              <img src="src/imagens/mission-sunset.png" alt="Pôr do sol representando missão" width="450" height="450" class="mission-img" loading="lazy">
+              <picture>
+                <source srcset="src/imagens/mission-sunset.webp" type="image/webp">
+                <img src="src/imagens/mission-sunset.webp" alt="Pôr do sol representando missão" width="450"
+                  height="450" class="mission-img" loading="lazy">
+              </picture>
             </div>
             <div class="mission-text">
               <span class="section-label">MISSÃO</span>
-              <h2 class="section-main-title">Olhos no horizonte</h2>
+              <h2 class="section-main-title">Impulsionar mudanças reais</h2>
               <p class="section-description">
-                Desbloqueamos o potencial dos nossos clientes através de estratégias e insights que impulsionam a
-                mudança transformadora e a resiliência das organizações, comunidades e natureza.
+                Transformamos desafios ambientais em oportunidades estratégicas.
+                Capacitamos organizações a construir resiliência climática e valor
+                sustentável, conectando expertise científica com soluções práticas
+                que beneficiam empresas, comunidades e o planeta.
               </p>
             </div>
           </div>
@@ -132,97 +197,114 @@
           <div class="vision-content">
             <div class="vision-text">
               <span class="section-label">VISÃO</span>
-              <h2 class="section-main-title">Enraizado em valores</h2>
+              <h2 class="section-main-title">Raízes que sustentam o futuro</h2>
               <p class="section-description">
-                Somos incansáveis na busca por uma transição para um futuro sustentável que proteja o meio ambiente e
-                respeite a dignidade, a saúde e o bem-estar das comunidades. Nossos valores se apoiam em ciência
-                rigorosa e princípios éticos sólidos. Acreditamos profundamente que este é o momento de agir com
-                firmeza, garantindo que os riscos sejam enfrentados por meio de estratégias e ações eficazes.
+                Acreditamos em um futuro onde sustentabilidade e prosperidade caminham
+                juntas. Nossa visão é ser referência em consultoria ESG no Brasil,
+                reconhecida pela excelência técnica, rigor científico e compromisso
+                ético. Trabalhamos para que cada projeto contribua concretamente para
+                um planeta mais equilibrado e resiliente.
               </p>
             </div>
             <div class="vision-image-wrapper">
               <div class="image-background dark-blue" aria-hidden="true"></div>
-              <img src="src/imagens/vision-roots.png" alt="Raízes representando valores" width="450" height="450" class="vision-img" loading="lazy">
+              <picture>
+                <source srcset="src/imagens/vision-roots.webp" type="image/webp">
+                <img src="src/imagens/vision-roots.webp" alt="Raízes representando valores" width="450" height="450"
+                  class="vision-img" loading="lazy">
+              </picture>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Seção: Valores -->
+    <!-- SEÇÃO: VALORES -->
     <section class="values-section">
       <div class="container values-container">
 
-        <!-- Título e Descrição -->
+        <!-- TÍTULO E DESCRIÇÃO -->
         <div class="values-header">
           <span class="values-label">VALORES</span>
-          <h2 class="values-title">O pulso constante</h2>
+          <h2 class="values-title">Compromisso com Resultados</h2>
           <p class="values-description">
-            Estamos comprometidos com a integridade, a colaboração e a melhoria contínua em tudo o que fazemos.
-            Esses valores orientam nossas ações, moldam nossa cultura e definem como nos relacionamos com nossa
-            equipe, nossos clientes e a comunidade.
+            Nossa atuação é fundamentada em princípios sólidos que refletem duas
+            décadas de experiência transformando sustentabilidade em valor
+            estratégico. Estes valores moldam nossa cultura e definem a qualidade
+            das soluções que entregamos ao mercado.
           </p>
         </div>
 
-        <!-- Cards de Valores -->
+        <!-- CARDS DE VALORES -->
         <div class="values-grid">
 
-          <!-- Card 1: Integridade -->
+          <!-- CARD 1: INTEGRIDADE -->
           <article class="value-card">
             <div class="value-icon-wrapper">
               <ion-icon name="shield-checkmark" aria-label="Ícone de integridade"></ion-icon>
             </div>
             <h3 class="value-title">Integridade</h3>
             <p class="value-text">
-              Abordamos questões difíceis com dados, objetividade e evidência. Trazemos integridade
-              a estas questões de uma forma que apoia decisões empresariais internas complexas.
+              Utilizamos metodologias reconhecidas globalmente e análises baseadas
+              em dados para oferecer diagnósticos precisos e recomendações confiáveis.
+              Nossa transparência e rigor técnico apoiam decisões estratégicas com
+              segurança e credibilidade.
             </p>
           </article>
 
-          <!-- Card 2: Ativação -->
+          <!-- CARD 2: ATIVAÇÃO -->
           <article class="value-card">
             <div class="value-icon-wrapper">
               <ion-icon name="sync" aria-label="Ícone de ativação"></ion-icon>
             </div>
-            <h3 class="value-title">Ativação</h3>
+            <h3 class="value-title">Expertise</h3>
             <p class="value-text">
-              Trabalhamos para capacitar a sua organização, facilitar o seu progresso e ativar as suas
-              vitórias onde elas são mais importantes.
+              Profissionais altamente qualificados com vasta experiência em diversos
+              setores da economia nacional. Nossa equipe multidisciplinar combina
+              conhecimento técnico profundo com visão estratégica de negócios para
+              entregar soluções diferenciadas.
             </p>
           </article>
 
-          <!-- Card 3: Colaboração -->
+          <!-- CARD 3: COLABORAÇÃO -->
           <article class="value-card">
             <div class="value-icon-wrapper">
               <ion-icon name="people" aria-label="Ícone de colaboração"></ion-icon>
             </div>
             <h3 class="value-title">Colaboração</h3>
             <p class="value-text">
-              Veja-nos como uma extensão da sua equipe. Unimos os objetivos específicos da sua empresa às
-              melhores práticas e soluções do setor por meio de uma abordagem colaborativa.
+              Construímos parcerias de longo prazo baseadas em confiança mútua e
+              objetivos compartilhados. Trabalhamos como uma extensão da sua equipe,
+              unindo expertise técnica global com profundo entendimento das
+              necessidades específicas do seu negócio.
             </p>
           </article>
 
-          <!-- Card 4: Precisão -->
+          <!-- CARD 4: PRECISÃO -->
           <article class="value-card">
             <div class="value-icon-wrapper">
               <ion-icon name="checkmark-done-circle" aria-label="Ícone de precisão"></ion-icon>
             </div>
             <h3 class="value-title">Precisão</h3>
             <p class="value-text">
-              A ciência, a exatidão e a qualidade são a base do nosso trabalho.
+              Excelência técnica e qualidade em cada entrega. Aplicamos metodologias
+              consolidadas e padrões internacionais (GRI, SASB, ODS) para garantir
+              precisão, conformidade e resultados que atendem às mais altas
+              expectativas do mercado.
             </p>
           </article>
 
-          <!-- Card 5: Sustentabilidade -->
+          <!-- CARD 5: SUSTENTABILIDADE -->
           <article class="value-card">
             <div class="value-icon-wrapper">
               <ion-icon name="leaf" aria-label="Ícone de sustentabilidade"></ion-icon>
             </div>
-            <h3 class="value-title">Sustentabilidade</h3>
+            <h3 class="value-title">Impacto</h3>
             <p class="value-text">
-              Somos movidos pelo imperativo climático global de assumir responsabilidades e agir. Dos desafios
-              locais às inovações globais, nosso trabalho é guiado pela urgência de proteger o planeta.
+              Histórico comprovado de resultados tangíveis e reconhecidos pelo mercado.
+              Cada projeto é desenvolvido para gerar transformação real: desde
+              diagnósticos situacionais até a implementação completa de estratégias
+              ESG que criam valor sustentável de longo prazo.
             </p>
           </article>
 
@@ -233,70 +315,67 @@
   </main>
 
   <!-- ========================================
-       FOOTER: Rodapé
+       FOOTER: RODAPÉ
        ======================================== -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-main-layout">
 
-        <!-- Coluna 1: Logo + Botão + Redes Sociais -->
+        <!-- COLUNA 1: LOGO + BOTÃO + REDES SOCIAIS -->
         <div class="footer-brand">
-          <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria"
-            class="footer-logo">
-          <button class="btn btn-outline" type="button">Vamos conversar</button>
+          <img src="src/imagens/galia-consultoria-e-treinamentos-2.webp" alt="Logo Gália Consultoria"
+            class="footer-logo" loading="lazy" width="280" height="153">
+          <a href="#contato" class="btn btn-outline" aria-label="Entre em contato conosco">
+            Vamos conversar
+          </a>
 
           <div class="footer-social-wrapper">
             <div class="footer-social-inline">
               <span>Siga-nos</span>
-              <a href="#" aria-label="LinkedIn da Gália Consultoria">
-                <ion-icon name="logo-linkedin"></ion-icon>
+
+              <!-- LINK DO LINKEDIN -->
+              <a href="https://www.linkedin.com/company/galia-consultoria" target="_blank" rel="noopener noreferrer"
+                aria-label="Visite nosso perfil no LinkedIn (abre em nova aba)">
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Coluna 2: Newsletter + Links -->
+        <!-- NEWSLETTER + LINKS -->
         <div class="footer-content-right">
 
-          <!-- Newsletter -->
-          <form class="footer-newsletter">
-            <div class="newsletter-text">
-              <h4>Fique em contato!</h4>
-              <p>Inscreva-se para receber as nossas últimas informações!</p>
-            </div>
-            <button class="btn btn-outline btn-newsletter" type="button">Inscrever-se</button>
-          </form>
-
-          <!-- Grid de Links -->
+          <!-- GRID DE LINKS -->
           <div class="footer-columns-grid">
 
-            <!-- Coluna: Empresa -->
+            <!-- EMPRESA -->
             <div class="footer-column">
               <h4>Empresa</h4>
               <ul>
-                <li><a href="#">Perspectivas</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="politica-privacidade.html">Política de privacidade</a></li>
               </ul>
             </div>
 
-            <!-- Coluna: Localização -->
+            <!-- LOCALIZAÇÃO -->
             <div class="footer-column">
               <h4>Localização</h4>
               <p>
                 <strong>Brasil</strong><br>
-                Campinas, São Paulo
+                Londrina, PR
               </p>
             </div>
 
-            <!-- Coluna: Disclaimer + Copyright -->
+            <!-- DISCLAIMER + COPYRIGHT -->
             <div class="footer-column">
               <p class="disclaimer-text">
                 Contribuindo para que organizações cooperativas, empresariais, civis e não governamentais impactem
                 positivamente milhões de pessoas no nosso Planeta.
               </p>
               <p class="copyright">
-                © 2026 GÁLIA Consultoria e Treinamento Empresarial Ltda.
+                © <span id="current-year">2026</span>
+                GÁLIA Consultoria e Treinamento Empresarial Ltda. Todos os direitos reservados.
               </p>
             </div>
 
@@ -307,15 +386,119 @@
     </div>
   </footer>
 
+
+  <!-- ========================================
+     MODAL DE CONTATO - GÁLIA CONSULTORIA
+     ======================================== -->
+
+  <!-- Overlay (fundo escuro) -->
+  <div id="contact-modal-overlay" class="modal-overlay">
+
+    <!-- Modal Container -->
+    <div class="modal-container">
+
+      <!-- Botão Fechar -->
+      <button class="modal-close" aria-label="Fechar modal">
+        <ion-icon name="close"></ion-icon>
+      </button>
+
+      <!-- Conteúdo do Modal -->
+      <div class="modal-content">
+
+        <!-- Cabeçalho -->
+        <div class="modal-header">
+          <h2>Vamos Conversar</h2>
+          <p>Preencha o formulário e entraremos em contato em breve.</p>
+        </div>
+
+        <!-- Formulário -->
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+
+          <!-- Nome e Sobrenome -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Nome *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Sobrenome *</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Seu sobrenome">
+            </div>
+          </div>
+
+          <!-- Empresa e Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">Empresa *</label>
+              <input type="text" id="company" name="company" required placeholder="Nome da empresa">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+          </div>
+
+          <!-- Telefone e País -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="country">País *</label>
+              <select id="country" name="country" required>
+                <option value="">Selecione</option>
+                <option value="BR" selected>Brasil</option>
+                <option value="PT">Portugal</option>
+                <option value="US">Estados Unidos</option>
+                <option value="AR">Argentina</option>
+                <option value="CL">Chile</option>
+                <option value="MX">México</option>
+                <option value="OTHER">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Mensagem -->
+          <div class="form-group">
+            <label for="message">Qual informação você está buscando? *</label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Descreva brevemente sua necessidade..."></textarea>
+          </div>
+
+          <!-- Botão Submit -->
+          <button type="submit" class="btn btn-primary btn-submit">
+            Enviar Mensagem
+          </button>
+
+          <!-- Mensagem de sucesso (oculta) -->
+          <div id="form-success" class="form-message form-success" style="display: none;">
+            ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
+          </div>
+
+          <!-- Mensagem de erro (oculta) -->
+          <div id="form-error" class="form-message form-error" style="display: none;">
+            ✗ Erro ao enviar mensagem. Por favor, tente novamente.
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
   <!-- ========================================
        SCRIPTS
        ======================================== -->
-  <!-- JavaScript Principal (Carrossel) -->
-  <script src="src/js/script.js"></script>
+  <!-- JAVASCRIPT PRINCIPAL -->
+  <script src="src/js/script.js" defer></script>
 
-  <!-- Ionicons (Ícones) -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- IONICONS  -->
+  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 

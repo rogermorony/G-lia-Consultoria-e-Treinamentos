@@ -6,54 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- SEO: Título e Meta Tags -->
+  <!-- SEO: TÍTULO E META TAGS -->
   <title>Gália Consultoria e Treinamentos</title>
-  <meta name="description" content="Relatórios GRI, Relatos Integrados, Relatórios de Administração, Relatórios de Impacto e Relatórios de Desempenho.">
-  <meta name="keywords" content="consultoria em sustentabilidade, ESG, relatórios GRI, relato integrado, relatório de impacto, relatório de sustentabilidade, indicadores ESG, mudanças climáticas, gestão ambiental, inventário de carbono, pegada de carbono, consultoria ambiental, governança corporativa, responsabilidade social, compliance ambiental">
+  <meta name="description"
+    content="Relatórios GRI, Relatos Integrados, Relatórios de Administração, Relatórios de Impacto e Relatórios de Desempenho.">
+  <meta name="keywords"
+    content="consultoria em sustentabilidade, ESG, relatórios GRI, relato integrado, relatório de impacto, relatório de sustentabilidade, indicadores ESG, mudanças climáticas, gestão ambiental, inventário de carbono, pegada de carbono, consultoria ambiental, governança corporativa, responsabilidade social, compliance ambiental">
   <meta name="author" content="Gália Consultoria e Treinamentos">
   <meta name="robots" content="index, follow">
 
-  <!-- Fontes Google: Inter -->
+  <link rel="canonical" href="https://www.fullonline.net/index.html">
+
+  <!-- FONTES GOOGLE: INTER -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Estilos CSS -->
+  <!-- ESTILO CSS -->
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/globals.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
 
-  <!-- Favicon -->
+  <!-- FAVICON -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Open Graph: Compartilhamento em Redes Sociais -->
+  <!-- OPEN GRAPH: COMPARTILHAMENTO EM REDES SOCIAIS -->
   <meta property="og:title" content="Gália Consultoria e Treinamentos">
-  <meta property="og:description" content="Relatórios GRI, Relatos Integrados, Relatórios de Administração, Relatórios de Impacto e Relatórios de Desempenho.">
+  <meta property="og:description"
+    content="Relatórios GRI, Relatos Integrados, Relatórios de Administração, Relatórios de Impacto e Relatórios de Desempenho.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.fullonline.net/">
   <meta property="og:image" content="https://www.fullonline.net/src/imagens/galia-consultoria-e-treinamentos-og.jpg">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+{
+  "@type": "WebSite",
+  "name": "Gália Consultoria e Treinamentos",
+  "url": "https://www.fullonline.net",
+  "description": "Consultoria especializada em sustentabilidade e estratégias ESG com 23 anos de experiência.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.fullonline.net/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+},
+
+{
+  "@type": "Organization",
+  "name": "Gália Consultoria e Treinamentos",
+  "url": "https://www.fullonline.net",
+  "logo": "https://www.fullonline.net/src/imagens/galia-consultoria-e-treinamentos-1.webp",
+  "foundingDate": "2002",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Londrina",
+    "addressRegion": "PR",
+    "addressCountry": "BR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "email": "contato@galiaonline.net"
+  },
+  "knowsAbout": ["ESG", "Sustentabilidade", "GRI", "SASB", "Clima", "Segurança Alimentar"]
+}
+
+</script>
 </head>
 
 <body>
 
-<!-- ========================================
-       HEADER: Navegação Principal
+  <!-- ========================================
+       HEADER:
        ======================================== -->
   <header class="site-header" role="banner">
     <div class="container header-wrap">
-      <!-- Logo -->
+      <!-- LOGO -->
       <a href="index.html" aria-label="Ir para o início">
-        <img src="src/imagens/galia-consultoria-e-treinamentos-1.png" alt="Logo Gália Consultoria" class="brand-logo">
+        <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria" class="brand-logo">
       </a>
 
-      <!-- Menu de Navegação -->
+            <!-- BOTÃO HAMBURGUER -->
+      <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU DE NAVEGAÇÃO -->
       <nav id="nav-principal" aria-label="Navegação principal">
         <ul class="nav-list">
-          
+
           <!-- ITEM COM DROPDOWN -->
           <li class="nav-item-dropdown">
-            <a href="#servicos" class="nav-link nav-link-dropdown">Serviços</a>
-            <div class="dropdown-menu">
-              <a href="solucoes-climaticas.html" class="dropdown-link">Soluções Climáticas e Baseadas na Natureza</a>
+            <a href="#servicos" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
+              role="button">Serviços</a>
+            <div class="dropdown-menu" aria-label="Submenu de Serviços" role="menu">
+              <a href="solucoes-climaticas.html" class="dropdown-link" role="menuitem">Soluções Climáticas e Baseadas na
+                Natureza</a>
               <a href="seguranca-alimentar.html" class="dropdown-link">Segurança e qualidade alimentar</a>
               <a href="ciclo-vida.html" class="dropdown-link">Avaliação do Ciclo de Vida</a>
               <a href="relatorios-sustentabilidade.html" class="dropdown-link">Relatórios de sustentabilidade</a>
@@ -62,10 +116,12 @@
               <a href="treinamentos.html" class="dropdown-link">Treinamentos</a>
             </div>
           </li>
-          
-          <li><a href="#perspectivas" class="nav-link">Perspectivas</a></li>
+
+          <li><a href="#insights" class="nav-link">Insights</a></li>
           <li><a href="quem-somos.html" class="nav-link">Quem somos</a></li>
-          <li><a href="#contato" class="btn btn-primary btn-contact">Fale Conosco</a></li>
+          <a href="https://wa.me/5543988497777?text=Olá! Gostaria de saber mais sobre consultoria e treinamentos da Gália."
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Falar no WhatsApp">Fale
+            Conosco</a>
         </ul>
       </nav>
     </div>
@@ -74,68 +130,73 @@
   <main>
 
     <!-- ========================================
-         HERO SECTION: Carrossel de Imagens
+         HERO SECTION: CARROSSEL DE APRESENTAÇÃO
          ======================================== -->
     <section class="hero-section" aria-label="Carrossel de apresentação">
 
-      <!-- Carrossel -->
+      <!-- CARROSSEL -->
       <div class="carousel">
         <div class="carousel-track">
 
-          <!-- Slide 1: Segurança Alimentar -->
+          <!-- SLIDE 1: SEGURANÇA ALIMENTAR -->
           <div class="carousel-slide active">
             <img src="src/imagens/hero-bg1.webp" alt="Profissional analisando dados" class="hero-bg-image">
             <div class="hero-content">
-              <h1>Orientação em Segurança Alimentar e Normas</h1>
+              <h2>Orientação em Segurança Alimentar e Normas</h2>
               <p>Construa. Antecipe. Proteja.</p>
-              <button class="btn btn-primary" aria-label="Saiba mais sobre segurança alimentar">Saiba Mais</button>
+              <a href="#solutions" class="btn btn-primary" aria-label="Saiba mais sobre segurança alimentar">Saiba
+                Mais</a>
             </div>
           </div>
 
-          <!-- Slide 2: Consultoria -->
+          <!-- SLIDE 2: CONSULTORIA -->
           <div class="carousel-slide">
             <img src="src/imagens/hero-bg2.webp" alt="Consultoria especializada em ação" class="hero-bg-image">
             <div class="hero-content">
-              <h1>Consultoria Especializada</h1>
+              <h2>Consultoria Especializada</h2>
               <p>Expertise e Qualidade.</p>
-              <button class="btn btn-primary" aria-label="Saiba mais sobre consultoria">Saiba Mais</button>
+              <a href="#solutions" class="btn btn-primary" aria-label="Saiba mais sobre segurança alimentar">Saiba
+                Mais</a>
             </div>
           </div>
 
-          <!-- Slide 3: Treinamentos -->
+          <!-- SLIDE 3: TREINAMENTOS -->
           <div class="carousel-slide">
             <img src="src/imagens/hero-bg3.webp" alt="Treinamento profissional" class="hero-bg-image">
             <div class="hero-content">
-              <h1>Treinamentos Profissionais</h1>
+              <h2>Treinamentos Profissionais</h2>
               <p>Capacite sua equipe.</p>
-              <button class="btn btn-primary" aria-label="Saiba mais sobre treinamentos">Saiba Mais</button>
+              <a href="#solutions" class="btn btn-primary" aria-label="Saiba mais sobre segurança alimentar">Saiba
+                Mais</a>
             </div>
           </div>
 
-          <!-- Slide 4: Soluções -->
+          <!-- SLIDE 4: SOLUÇÕES -->
           <div class="carousel-slide">
             <img src="src/imagens/hero-bg4.webp" alt="Soluções personalizadas para empresas" class="hero-bg-image">
             <div class="hero-content">
-              <h1>Soluções Personalizadas</h1>
+              <h2>Soluções Personalizadas</h2>
               <p>Para seu negócio.</p>
-              <button class="btn btn-primary" aria-label="Saiba mais sobre soluções">Saiba Mais</button>
+              <a href="#solutions" class="btn btn-primary" aria-label="Saiba mais sobre segurança alimentar">Saiba
+                Mais</a>
             </div>
           </div>
 
-          <!-- Slide 5: Excelência -->
+          <!-- SLIDE 5: EXCELÊNCIA -->
           <div class="carousel-slide">
             <img src="src/imagens/hero-bg5.webp" alt="Compromisso com excelência" class="hero-bg-image">
             <div class="hero-content">
-              <h1>Compromisso com Excelência</h1>
+              <h2>Compromisso com Excelência</h2>
               <p>Resultados comprovados.</p>
-              <button class="btn btn-primary" aria-label="Saiba mais sobre nosso compromisso">Saiba Mais</button>
+              <a href="#solutions" class="btn btn-primary" aria-label="Saiba mais sobre segurança alimentar">Saiba
+                Mais</a>
             </div>
           </div>
 
         </div>
       </div>
 
-      <!-- Indicadores do Carrossel (Bolinhas) -->
+      <!-- INDICADORES DO CARROSSEL (Bolinhas) -->
       <div class="carousel-indicators" role="tablist" aria-label="Navegação do carrossel">
         <button class="indicator active" data-slide="0" aria-label="Ir para slide 1" role="tab"></button>
         <button class="indicator" data-slide="1" aria-label="Ir para slide 2" role="tab"></button>
@@ -145,29 +206,29 @@
       </div>
     </section>
 
-    <!-- Wave SVG: Transição Hero -> Value Section -->
+    <!-- WAVE -->
     <svg class="hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
       <path d="M0,40 C240,10 480,10 720,30 C960,50 1200,50 1440,20 L1440,60 L0,60 Z" fill="#ffffff" />
     </svg>
 
     <!-- ========================================
-         VALUE SECTION: Valor que Oferecemos
+         SEÇÃO: VALOR QUE OFERECEMOS
          ======================================== -->
     <section id="servicos" class="value-section">
       <div class="container value-container">
 
-        <!-- Visual: Globo + Linha Decorativa -->
+        <!-- Visual: MAPA BRASIL + LINHA DECORATIVA -->
         <div class="value-visual">
           <div class="decorative-curve"></div>
-          <div class="globe-container">
-            <video class="globe-video" autoplay loop muted playsinline>
-              <source src="src/imagens/earth.mp4" type="video/mp4">
+          <div class="map-container">
+            <video class="map-video" autoplay loop muted playsinline poster="src/imagens/map-brazil-poster.webp">
+              <source src="src/imagens/map-brazil.mp4" type="video/mp4">
               Seu navegador não suporta vídeos HTML5.
             </video>
           </div>
         </div>
 
-        <!-- Conteúdo: Texto -->
+        <!-- CONTEÚDO -->
         <div class="value-content">
           <h2 class="section-title">VALOR QUE OFERECEMOS</h2>
           <h1 class="section-title-h1">
@@ -188,17 +249,17 @@
     </section>
 
     <!-- ========================================
-         GRADIENT SECTIONS: 3 Seções com Degradê
+         GRADIENT SECTIONS WRAPPER: SEÇÕES COM VÍDEOS E CARDS
          ======================================== -->
     <section class="gradient-sections-wrapper">
 
       <!-- ==========================================
-           SEÇÃO 1: A Nossa Abordagem (Estrada)
+           SEÇÃO 1: A NOSSA ABORTADAGEM
            ========================================== -->
       <div class="approach-section">
         <div class="container approach-container">
 
-          <!-- Conteúdo: Texto -->
+          <!-- CONTEÚDO -->
           <div class="approach-content">
             <h2 class="section-title approach-subtitle">A NOSSA ABORDAGEM</h2>
             <h1 class="approach-title">
@@ -218,7 +279,7 @@
             <button class="btn btn-primary">Fale com um especialista</button>
           </div>
 
-          <!-- Visual: Vídeo da Estrada -->
+          <!-- VISUAL: VÍDEO DA ESTRADA -->
           <div class="approach-media">
             <video class="approach-video" autoplay loop muted playsinline>
               <source src="src/imagens/road.mp4" type="video/mp4">
@@ -229,16 +290,16 @@
       </div>
 
       <!-- ==========================================
-           SEÇÃO 2: Explore as Soluções (Cards)
+           SEÇÃO 2: EXPLORE AS SOLUÇÕES (Cards)
            ========================================== -->
-      <div class="solutions-section">
+      <div class="solutions-section" id="solutions"> 
 
-        <!-- Linha Decorativa Curva -->
+        <!-- LINHA DECORATIVA CURVA -->
         <div class="solutions-decorative-curve"></div>
 
         <div class="container solutions-container">
 
-          <!-- Conteúdo: Texto -->
+          <!-- CONTEÚDO -->
           <div class="solutions-content">
             <h2 class="section-title solutions-subtitle">EXPLORE AS NOSSAS SOLUÇÕES</h2>
             <h1 class="solutions-title">
@@ -251,30 +312,48 @@
             <button class="btn btn-primary">Fale com um especialista</button>
           </div>
 
-          <!-- Cards de Soluções -->
+          <!-- CARDS SOLUÇÕES -->
           <div class="solutions-cards">
 
-            <!-- Card 1 -->
-            <a href="#" class="solution-card">
+            <!-- CARD 1 -->
+            <a href="solucoes-climaticas.html" class="solution-card">
               <span>Soluções Climáticas e Sustentabilidade Territorial</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <!-- Card 2 -->
+            <!-- CARD 2 -->
             <a href="#" class="solution-card">
               <span>Segurança e sustentabilidade alimentar</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <!-- Card 3 -->
+            <!-- CARD 3 -->
             <a href="#" class="solution-card">
-              <span>Soluções Climáticas e Sustentabilidade Territorial</span>
+              <span>Avaliação do Ciclo de Vida</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <!-- Card 4 -->
+            <!-- CARD 4 -->
+            <a href="#" class="solution-card">
+              <span>Relatórios de Sustentabilidade</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
+            <!-- CARD 5 -->
+            <a href="#" class="solution-card">
+              <span>Consultoria em finanças sustentáveis</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
+            <!-- CARD 6 -->
             <a href="#" class="solution-card">
               <span>Consultoria em Cadeias de Valor Sustentáveis</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
+            <!-- CARD 7 -->
+            <a href="treinamentos.html" class="solution-card">
+              <span>Treinamentos</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
@@ -283,12 +362,12 @@
       </div>
 
       <!-- ==========================================
-           SEÇÃO 3: Conecte-se Conosco (Pessoas)
+           SEÇÃO 3: CONECTE-SE CONOSCO
            ========================================== -->
       <div class="connect-section">
         <div class="container connect-container">
 
-          <!-- Conteúdo: Texto -->
+          <!-- CONTEÚDO -->
           <div class="connect-content">
             <h2 class="section-title connect-subtitle">CONECTE-SE CONOSCO</h2>
             <h1 class="connect-title">
@@ -304,7 +383,7 @@
             <button class="btn btn-primary">Fale com um especialista</button>
           </div>
 
-          <!-- Visual: Vídeo das Pessoas -->
+          <!-- VISUAL: VÍDEO DA CONEXÃO -->
           <div class="connect-media">
             <video class="connect-video" autoplay loop muted playsinline>
               <source src="src/imagens/connect.mp4" type="video/mp4">
@@ -319,69 +398,67 @@
   </main>
 
   <!-- ========================================
-       FOOTER: Rodapé
+       FOOTER: RODAPÉ
        ======================================== -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-main-layout">
 
-        <!-- Coluna 1: Logo + Botão + Redes Sociais -->
+        <!-- COLUNA 1: LOGO + BOTÃO + REDES SOCIAIS -->
         <div class="footer-brand">
-          <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria" class="footer-logo">
-          <button class="btn btn-outline" type="button">Vamos conversar</button>
+          <img src="src/imagens/galia-consultoria-e-treinamentos-2.webp" alt="Logo Gália Consultoria"
+            class="footer-logo" loading="lazy" width="280" height="153">
+          <a href="#contato" class="btn btn-outline" aria-label="Entre em contato conosco">
+            Vamos conversar
+          </a>
 
           <div class="footer-social-wrapper">
             <div class="footer-social-inline">
               <span>Siga-nos</span>
-              <a href="#" aria-label="LinkedIn da Gália Consultoria">
-                <ion-icon name="logo-linkedin"></ion-icon>
+
+              <!-- LINK DO LINKEDIN -->
+              <a href="https://www.linkedin.com/company/galia-consultoria" target="_blank" rel="noopener noreferrer"
+                aria-label="Visite nosso perfil no LinkedIn (abre em nova aba)">
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Coluna 2: Newsletter + Links -->
+        <!-- NEWSLETTER + LINKS -->
         <div class="footer-content-right">
 
-          <!-- Newsletter -->
-          <form class="footer-newsletter">
-            <div class="newsletter-text">
-              <h4>Fique em contato!</h4>
-              <p>Inscreva-se para receber as nossas últimas informações!</p>
-            </div>
-            <button class="btn btn-outline btn-newsletter" type="button">Inscrever-se</button>
-          </form>
-
-          <!-- Grid de Links -->
+          <!-- GRID DE LINKS -->
           <div class="footer-columns-grid">
 
-            <!-- Coluna: Empresa -->
+            <!-- EMPRESA -->
             <div class="footer-column">
               <h4>Empresa</h4>
               <ul>
-                <li><a href="#">Perspectivas</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="politica-privacidade.html">Política de privacidade</a></li>
               </ul>
             </div>
 
-            <!-- Coluna: Localização -->
+            <!-- LOCALIZAÇÃO -->
             <div class="footer-column">
               <h4>Localização</h4>
               <p>
                 <strong>Brasil</strong><br>
-                Campinas, São Paulo
+                Londrina, PR
               </p>
             </div>
 
-            <!-- Coluna: Disclaimer + Copyright -->
+            <!-- DISCLAIMER + COPYRIGHT -->
             <div class="footer-column">
               <p class="disclaimer-text">
                 Contribuindo para que organizações cooperativas, empresariais, civis e não governamentais impactem
                 positivamente milhões de pessoas no nosso Planeta.
               </p>
               <p class="copyright">
-                © 2026 GÁLIA Consultoria e Treinamento Empresarial Ltda.
+                © <span id="current-year">2026</span>
+                GÁLIA Consultoria e Treinamento Empresarial Ltda. Todos os direitos reservados.
               </p>
             </div>
 
@@ -395,12 +472,12 @@
   <!-- ========================================
        SCRIPTS
        ======================================== -->
-  <!-- JavaScript Principal (Carrossel) -->
-  <script src="src/js/script.js"></script>
+  <!-- JAVASCRIPT PRINCIPAL -->
+  <script src="src/js/script.js" defer></script>
 
-  <!-- Ionicons (Ícones) -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- IONICONS  -->
+  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 

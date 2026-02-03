@@ -1,8 +1,802 @@
+/* ==========================================================================
+   ABOUT HERO - AJUSTE DE GRADIENTE (MESMO ESTILO DA INDEX)
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .about-hero {
+    position: relative;
+    min-height: 85vh !important;
+    overflow: hidden !important; /* Garante que o gradiente não vaze */
+  }
+
+  /* Remova o ::after anterior e use este ::before igual ao da Index */
+  .about-hero::before {
+    display: block !important;
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    
+    /* Ajuste de Altura: cobre 65% da imagem para dar leitura ao título */
+    height: 150% !important; 
+    
+    /* Gradiente que some suavemente */
+    background: linear-gradient(to bottom, 
+                rgba(0,0,0,0.7) 0%, 
+                rgba(0,0,0,0.4) 50%, 
+                rgba(0,0,0,0) 100%) !important;
+    
+    z-index: 2 !important;
+    pointer-events: none;
+  }
+
+  .about-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  /* Container de Texto acima do gradiente */
+  .about-hero-wrap {
+    position: relative;
+    z-index: 3; 
+    padding-top: 80px !important; /* Joga o texto um pouco mais para cima no mobile */
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   ABOUT HERO (PÁGINA QUEM SOMOS)
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .about-hero {
+    min-height: 90vh !important; /* Quase a tela cheia para dar impacto */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative;
+    padding: 0 !important;
+  }
+
+  /* Ajuste da Imagem de Fundo */
+  .about-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .about-hero-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Preenche sem distorcer */
+    object-position: center;
+  }
+
+  /* Overlay para leitura: Se a foto for clara, o texto branco some. 
+     Isso aqui cria uma camada escura suave por cima da foto */
+  .about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 2;
+  }
+
+  /* Container do Texto */
+  .about-hero-wrap {
+    position: relative;
+    z-index: 3;
+    width: 100% !important;
+    padding: 0 25px !important;
+    text-align: center;
+  }
+
+  .about-hero-title {
+    font-size: 36px !important;
+    margin-bottom: 20px !important;
+    color: #ffffff !important;
+  }
+
+  .about-hero-text {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #ffffff !important;
+    max-width: 100% !important;
+  }
+
+  /* Ajuste da Onda (Wave) */
+  .wave-divider {
+    position: absolute;
+    bottom: -1px !important; /* Evita frestas brancas */
+    left: 0;
+    width: 100%;
+    height: 40px !important; /* Reduz a altura da onda no mobile */
+    z-index: 4;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO: VALORES (GRID DE CARDS)
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .values-section {
+    padding: 60px 0 !important;
+  }
+
+  /* Cabeçalho da Seção */
+  .values-header {
+    text-align: center;
+    padding: 0 20px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .values-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+
+  .values-title {
+    font-size: 28px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .values-description {
+    font-size: 15px !important;
+    line-height: 1.6;
+    max-width: 100% !important;
+  }
+
+  /* Grid de Cards */
+  .values-grid {
+    display: flex !important;
+    flex-direction: column !important; /* Empilha os cards */
+    gap: 20px !important;
+    padding: 0 20px !important;
+  }
+
+  /* O Card Individual */
+  .value-card {
+    padding: 30px 25px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra leve para destacar no fundo */
+  }
+
+  .value-icon-wrapper {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--color-secondary-rgb), 0.1); /* Fundo suave para o ícone */
+    border-radius: 50%;
+  }
+
+  .value-icon-wrapper ion-icon {
+    font-size: 32px !important;
+    color: var(--color-secondary);
+  }
+
+  .value-card .value-title {
+    font-size: 20px !important;
+    margin-bottom: 12px !important;
+    color: var(--color-secondary);
+  }
+
+  .value-text {
+    font-size: 14px !important;
+    line-height: 1.6;
+    color: var(--color-gray);
+    margin: 0;
+  }
+}
+
+/* ==========================================================================
+   VISÃO (BLOCO COM FUNDO DARK-BLUE)
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .vision-block {
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .vision-content {
+    display: flex !important;
+    /* Inverte a ordem: faz a imagem que está depois do texto no HTML ir para cima */
+    flex-direction: column-reverse !important; 
+    align-items: center !important;
+    text-align: center;
+    gap: 30px;
+  }
+
+  /* Ajuste da Imagem e do Fundo Dark-Blue */
+  .vision-image-wrapper {
+    position: relative;
+    width: 280px !important;
+    height: 280px !important;
+    margin: 0 auto;
+  }
+
+  .image-background.dark-blue {
+    width: 100% !important;
+    height: 100% !important;
+    top: 15px !important;
+    right: 15px !important; /* Deslocamento para o lado oposto ao azul claro se desejar simetria */
+    border-radius: 20px;
+    background-color: var(--color-secondary) !important; /* Garante que pegue a cor variável */
+  }
+
+  .vision-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Texto da Visão */
+  .vision-text {
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vision-text .section-main-title {
+    font-size: 26px !important;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-align: center !important;
+  }
+
+  .vision-text .section-description {
+    font-size: 15px !important;
+    line-height: 1.6;
+    text-align: center !important;
+  }
+
+  /* Esconde a curva decorativa específica da visão */
+  .decorative-vision-curve {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO: MISSÃO E VISÃO
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .mission-vision-section {
+    padding-top: 80px !important;
+    overflow: hidden;
+  }
+
+  .mission-vision-container {
+    padding: 0 20px;
+  }
+
+  /* O bloco que contém imagem + texto */
+  .mission-block {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .mission-content {
+    display: flex !important;
+    flex-direction: column !important; /* Imagem em cima, texto embaixo */
+    align-items: center !important;
+    text-align: center;
+    gap: 30px;
+  }
+
+  /* Ajuste da Imagem e do Fundo Colorido */
+  .mission-image-wrapper {
+    position: relative;
+    width: 280px !important; /* Tamanho fixo menor para mobile */
+    height: 280px !important;
+    margin: 0 auto;
+  }
+
+  .image-background.blue {
+    width: 100% !important;
+    height: 100% !important;
+    top: 15px !important; /* Reduz o deslocamento do fundo colorido */
+    left: 15px !important;
+    border-radius: 20px;
+  }
+
+  .mission-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Texto da Missão */
+  .mission-text {
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .section-main-title {
+    font-size: 26px !important;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .section-description {
+    font-size: 15px !important;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  /* Esconde a curva decorativa que pode quebrar o layout lateral */
+  .decorative-mission-curve {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO: CONECTE-SE CONOSCO
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .connect-section {
+    padding: 60px 0 !important;
+    margin-top: -40px;
+  }
+
+  .connect-container {
+    flex-direction: column !important; /* Texto em cima, vídeo embaixo */
+    display: flex !important;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+  }
+
+  /* Conteúdo de Texto */
+  .connect-content {
+    width: 100% !important;
+    padding: 0 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    order: 1; /* Garante que o usuário leia o convite antes de ver o vídeo */
+  }
+
+  .connect-title {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  /* Remove os <br> para evitar quebras de linha forçadas no celular */
+  .connect-title br {
+    display: none;
+  }
+
+  .connect-description {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 25px !important;
+    text-align: center !important;
+  }
+
+  /* Visual: Vídeo da Conexão */
+  .connect-media {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px;
+    order: 2;
+  }
+
+  .connect-video {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 15px; /* Mantém o padrão visual dos outros vídeos */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  /* Centralização do Botão */
+  .connect-content .btn {
+    margin: 0 auto !important;
+    display: inline-flex !important;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO: EXPLORE AS SOLUÇÕES (CARDS)
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .solutions-section {
+    padding: 60px 0 !important;
+    position: relative;
+    margin-top: -280px;
+  }
+
+  .solutions-container {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  /* Conteúdo de Texto superior */
+  .solutions-content {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 20px !important;
+  }
+
+  .solutions-title {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 25px !important;
+    text-align: center !important;
+  }
+
+  /* Remove os <br> para o texto fluir na largura do celular */
+  .solutions-title br {
+    display: none;
+  }
+
+  /* GRID DE CARDS: Transforma em lista vertical */
+  .solutions-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important; /* Espaçamento entre os cards */
+    width: 100% !important;
+    padding: 0 20px !important;
+  }
+
+  /* O CARD INDIVIDUAL */
+  .solution-card {
+    width: 100% !important;
+    min-height: 70px !important; /* Altura confortável para o toque */
+    padding: 18px 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important; /* Texto na esquerda, seta na direita */
+    text-align: left !important;
+    background: var(--color-primary) !important; /* Mantém o fundo sutil */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+  }
+
+  .solution-card span {
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+    max-width: 85%; /* Evita que o texto encoste na seta */
+  }
+
+  .solution-card ion-icon {
+    font-size: 20px !important;
+    flex-shrink: 0; /* Impede a seta de achatar */
+  }
+
+  /* Esconde a linha decorativa curva que causa erro de largura no mobile */
+  .solutions-decorative-curve {
+    display: none !important;
+  }
+
+  /* Centraliza o botão principal da seção */
+  .solutions-content .btn {
+    margin: 0 auto !important;
+    order: 3; /* Se quiser que o botão fique abaixo dos cards, mude para um valor maior */
+  }
+}
+
+
+/* ==========================================================================
+   SEÇÃO: A NOSSA ABORDAGEM (VÍDEO ESTRADA)
+   ========================================================================== */
+@media (max-width: 767px) {
+
+  .approach-section {
+    padding: 60px 0 !important;
+  }
+
+  .approach-container {
+    flex-direction: column !important; /* Empilha conteúdo e vídeo */
+    display: flex !important;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  /* Conteúdo de Texto */
+  .approach-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Centraliza o bloco e o botão */
+    order: 1; /* Garante que o texto venha antes do vídeo */
+  }
+
+  .approach-title {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  /* Remove os <br> para o título não ficar quebrado errado no celular */
+  .approach-title br {
+    display: none;
+  }
+
+  .approach-description {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+  }
+
+  /* Visual: Vídeo da Estrada */
+  .approach-media {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 20px;
+    order: 2;
+  }
+
+  .approach-video {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 15px; /* Deixa o vídeo elegante no mobile */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+
+  /* Garante que o botão fique centralizado */
+  .approach-content .btn {
+    margin: 0 auto !important;
+    display: inline-flex !important;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO: VALOR QUE OFERECEMOS
+   ========================================================================== */
+@media (max-width: 767px) {
+  
+  .value-section {
+    padding: 60px 0 !important;
+    overflow: hidden;
+  }
+
+  .value-container {
+    flex-direction: column !important; /* Empilha o mapa sobre o texto */
+    display: flex !important;
+    align-items: center;
+    text-align: center; /* Centraliza o texto no mobile */
+    gap: 40px;
+  }
+
+  /* Ajuste do Visual (Mapa) */
+  .value-visual {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .map-container {
+    width: 100% !important;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: -400px;
+  }
+
+  .map-video {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+  /* Esconde a curva decorativa no mobile para limpar o layout */
+  .decorative-curve {
+    display: none !important;
+  }
+
+  /* Ajuste do Conteúdo de Texto */
+  .value-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important; 
+    padding: 0 20px !important;
+    margin-top: -320px;
+  }
+
+  .value-content .section-title {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .section-title-h1 {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Remove os <br> do HTML para o texto fluir naturalmente no mobile */
+  .section-title-h1 br {
+    display: none;
+  }
+
+  .value-description {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 30px !important;
+    text-align: center;
+  }
+
+  .value-content .btn {
+    margin: 0 auto !important; /* Centraliza o botão */
+    display: inline-flex !important;
+  }
+}
+
 /* ========================================
-   RESPONSIVE - MOBILE E TABLET
-   Site: Gália Consultoria
-   Breakpoints: Mobile (≤767px), Tablet (768-1024px), Desktop pequeno (≤1200px)
+   AJUSTE DE ALTURA DO GRADIENTE (OVERLAY)
    ======================================== */
+@media (max-width: 767px) {
+
+  /* Se o gradiente for o ::before do slide */
+  .carousel-slide::before {
+    display: block !important;
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    
+    /* AJUSTE AQUI: Em vez de 100%, vamos deixar ele cobrir só até o meio */
+    height: 60% !important; 
+    
+    /* Suaviza o final do gradiente para ele não terminar bruscamente */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%) !important;
+    
+    z-index: 1 !important;
+    pointer-events: none; /* Garante que o gradiente não bloqueie cliques no botão */
+  }
+
+  /* Garante que o container "corte" qualquer coisa que tente sair */
+  .hero-section, .carousel-slide {
+    overflow: hidden !important;
+  }
+}
+/* ========================================
+   HERO CARROSSEL RESPONSIVO
+   ======================================== */
+@media (max-width: 767px) {
+  
+  .hero-section {
+    height: 100vh;
+    min-height: 550px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel, .carousel-track {
+    height: 100%;
+  }
+
+  .hero-bg-image {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .hero-content {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    
+    width: 90% !important;
+    max-width: 100% !important; 
+    padding: 0 !important;
+    margin: 0 !important;
+    
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    z-index: 5;
+  }
+
+  .hero-content h2 {
+    font-size: 26px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 15px 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-content p {
+    font-size: 16px !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto 25px auto !important;
+  }
+
+  /* Botão Saiba Mais */
+  .hero-content .btn {
+    width: 200px;
+    padding: 15px;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  /* Bolinhas (Indicadores) - Ajuste de posição */
+  .carousel-indicators {
+    bottom: 100px; /* Sobe um pouco para não ficar em cima da wave */
+  }
+
+  /* A Onda (Wave) no Mobile */
+  .hero-wave {
+    height: 40px; /* Diminui a altura da onda para ganhar espaço */
+    bottom: -1px;
+  }
+}
+
+
+/* ========================================
+   HAMBURGUER — ESCONDIDO NO DESKTOP
+   ======================================== */
+.mobile-menu-toggle {
+  display: none;
+  margin-left: 120px;
+}
 
 /* ========================================
    DESKTOP PEQUENO (≤1200px)
@@ -176,22 +970,97 @@
     margin-top: 10px;
   }
 
-  /* Menu em coluna (ou implementar hamburger menu) */
+  /* ========================================
+     HAMBURGUER — APARECE NO MOBILE
+     ======================================== */
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 2.5px;
+    background: var(--color-white);
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+  }
+
+  /* Animação para X quando .active */
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+  }
+
+  /* ========================================
+     OVERLAY — FUNDO ESCURO ATRÁS DO MENU
+     ======================================== */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* ========================================
+     NAV — ESCONDIDO POR PADRÃO, ABRE COM .mobile-menu-open
+     ======================================== */
   .nav-list {
     position: fixed;
-    top: 80px;
-    left: 0;
+    top: 0;
     right: 0;
+    width: 280px;
+    height: 100vh;
     background: rgba(33, 72, 100, 0.98);
+    backdrop-filter: blur(12px);
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    padding: 20px;
-    display: none; /* Esconde por padrão */
+    padding: 100px 24px 40px;
+    z-index: 999;
+    /* Estado fechado */
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.3s ease,
+                visibility 0.35s ease;
+    overflow-y: auto;
   }
 
   .nav-list.mobile-menu-open {
-    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav-list li {
@@ -199,40 +1068,101 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
+  .nav-list li:last-child {
+    border-bottom: none;
+  }
+
   .nav-link {
     display: block;
     padding: 16px 0;
     font-size: 16px;
     width: 100%;
+    position: relative;
   }
 
-  /* Botão mobile */
-  .btn-contact {
-    margin-top: 10px;
+  /* ========================================
+   DROPDOWN MOBILE — ABRE COM .active (click)
+   ======================================== */
+@media (max-width: 767px) {
+  
+  /* 1. Reset de estilos do Desktop */
+  .nav-item-dropdown .dropdown-menu {
+    display: block;      /* Mudamos de none para block para permitir animação */
+    position: static;    /* Tira do modo flutuante */
+    transform: none;
+    box-shadow: none;
+    min-width: unset;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    margin: 4px 0 8px;
+    padding: 0 16px;     /* Padding lateral apenas */
+    
+    /* Estado Fechado */
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.25s ease, visibility 0.25s ease;
+  }
+
+  /* 2. Estado Aberto (Ativado via JS com a classe .active) */
+  .nav-item-dropdown.active .dropdown-menu {
+    max-height: 500px;   /* Altura suficiente para os links */
+    opacity: 1;
+    visibility: visible;
+    padding: 10px 16px;  /* Adiciona o padding vertical ao abrir */
+  }
+
+  /* 3. Seta de Indicação no item "Serviços" */
+  .nav-link-dropdown {
+    position: relative;
+    display: block;
+    padding-right: 25px; /* Espaço para a seta não encavalar no texto */
+  }
+
+  .nav-link-dropdown::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg); /* Seta para a direita ou baixo */
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
+    transition: transform 0.3s ease;
+  }
+
+  /* Roda a seta quando o menu está ativo */
+  .nav-item-dropdown.active .nav-link-dropdown::after {
+    transform: translateY(-50%) rotate(-135deg);
+  }
+
+  /* 4. Estilo dos Links Internos */
+  .dropdown-link {
+    display: block;
+    padding: 12px 0;
+    font-size: 14px;
+    color: var(--color-white);
+    transition: all 0.2s ease;
+  }
+
+  .dropdown-link:hover {
+    padding-left: 8px;
+    color: var(--color-primary);
+  }
+
+  /* 5. Ajustes de UI Mobile */
+  .nav-link::after {
+    display: none !important; /* Remove a linha verde de hover do desktop no mobile */
+  }
+
+  .nav-list > .btn {
+    margin-top: 20px;
     width: 100%;
     text-align: center;
   }
-
-  /* Dropdown mobile */
-  .nav-item-dropdown {
-    width: 100%;
-  }
-
-  .dropdown-menu {
-    position: static;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 10px 0 10px 20px;
-    display: none;
-  }
-
-  .nav-item-dropdown:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown-link {
-    padding: 12px 0;
-    font-size: 14px;
-  }
+}
 
   /* ========================================
      BOTÕES
@@ -251,7 +1181,7 @@
      ======================================== */
   .service-hero {
     min-height: auto;
-    padding: 120px 0 60px; /* Espaço pro header fixo */
+    padding: 120px 0 60px;
   }
 
   .service-hero-wrap {
@@ -275,10 +1205,6 @@
     line-height: 1.6;
   }
 
-  /* Wave menor */
-  .wave-divider {
-    height: 40px;
-  }
 
   /* ========================================
      SEÇÃO: FOCO
@@ -299,6 +1225,7 @@
   .section-main-title {
     font-size: 24px;
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .service-content-grid {
@@ -375,7 +1302,7 @@
   }
 
   .faq-list {
-    max-height: none; /* Remove limite de altura */
+    max-height: none;
   }
 
   .faq-question {
@@ -390,7 +1317,7 @@
   }
 
   .faq-item.active .faq-answer {
-    max-height: 500px; /* Maior para mobile */
+    max-height: 500px;
   }
 
   /* Imagem Mergulho */
@@ -462,54 +1389,60 @@
      FOOTER
      ======================================== */
   .site-footer {
-    padding: 40px 0 20px;
+    padding: 48px 0 28px;
   }
 
   .footer-container {
-    padding: 0 20px;
+    padding: 0 24px;
   }
 
   .footer-main-layout {
     flex-direction: column;
-    gap: 40px;
+    gap: 0;
   }
 
+  /* Marca: logo + botão + redes */
   .footer-brand {
-    text-align: center;
-  }
+  flex: none;              /* cancela o flex: 0 0 300px do globals */
+  width: 100%;             /* ocupa toda a largura do container */
+  text-align: center;
+  align-items: center;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
 
   .footer-logo {
-    max-width: 200px;
-    margin: 0 auto 20px;
-  }
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
 
   .footer-brand .btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 240px;
+    margin: 0 auto;
+    display: block;
   }
 
   .footer-social-wrapper {
     margin-top: 20px;
   }
 
+  .footer-social-inline {
+    justify-content: center;
+  }
+
+  /* Colunas de links */
   .footer-content-right {
     width: 100%;
-  }
-
-  .footer-newsletter {
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-  }
-
-  .footer-newsletter .btn {
-    width: 100%;
+    padding-top: 28px;
   }
 
   .footer-columns-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 24px;
+    margin-top: 0;
+    transform: translateY(0); /* cancela o translateY(80px) do desktop */
   }
 
   .footer-column {
@@ -517,24 +1450,108 @@
   }
 
   .footer-column h4 {
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.6;
   }
 
   .footer-column ul li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
+  .footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Disclaimer + copyright: separado visualmente */
   .disclaimer-text {
     font-size: 13px;
     line-height: 1.5;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-top: 8px;
   }
 
   .copyright {
     font-size: 12px;
-    margin-top: 16px;
+    margin-top: 12px;
+    opacity: 0.5;
   }
 }
+
+/* ========================================
+   RESPONSIVIDADE DO MODAL DE CONTATO
+   ======================================== */
+
+@media (max-width: 767px) {
+  /* 1. Ajuste do Container do Modal */
+  .modal-container {
+    width: 95%;            /* Quase a largura total da tela */
+    max-height: 90vh;      /* Não deixa o modal ser maior que a altura da tela */
+    padding: 30px 20px;    /* Reduz o padding interno */
+    overflow-y: auto;      /* Permite scroll dentro do modal se o form for longo */
+    margin: 10px;
+  }
+
+  /* 2. Forçar uma coluna nos campos Nome/Sobrenome, etc. */
+  .form-row {
+    grid-template-columns: 1fr; /* Muda de 2 colunas para 1 */
+    gap: 15px;                  /* Espaço entre os campos empilhados */
+  }
+
+  /* 3. Ajustes de Tipografia */
+  .modal-header h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .modal-header p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* 4. Ajuste dos Inputs e Labels */
+  .form-group label {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .form-group input, 
+  .form-group select, 
+  .form-group textarea {
+    padding: 12px;
+    font-size: 16px; /* Evita que o iOS dê zoom automático ao focar no campo */
+  }
+
+  /* 5. Botão de Fechar maior para facilitar o toque (UX) */
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+  }
+
+  /* 6. Botão de Enviar ocupando a largura toda */
+  .btn-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Ajuste para celulares muito pequenos (iPhone SE, etc) */
+@media (max-width: 380px) {
+  .modal-container {
+    padding: 20px 15px;
+  }
+  
+  .modal-header h2 {
+    font-size: 20px;
+  }
+}
+
 
 /* ========================================
    MOBILE PEQUENO (≤480px)
@@ -587,11 +1604,12 @@
 
 /* Aumenta área de toque em mobile */
 @media (max-width: 767px) {
+  .mobile-menu-toggle,
   .nav-link,
   .dropdown-link,
   .faq-question,
   .btn {
-    min-height: 44px; /* Tamanho mínimo recomendado para toque */
+    min-height: 44px;
     display: flex;
     align-items: center;
   }

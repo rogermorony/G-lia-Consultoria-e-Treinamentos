@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const showSlide = (index) => {
     slides.forEach((slide) => slide.classList.remove("active"));
     indicators.forEach((ind) => ind.classList.remove("active"));
-    slides[index]?.classList.add("active");
-    indicators[index]?.classList.add("active");
+    if (slides[index]) slides[index].classList.add("active");
+    if (indicators[index]) indicators[index].classList.add("active");
   };
 
   const nextSlide = () => {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ========================================
-     PÁGINA DE SERVIÇOS – NAVEGAÇÃO
+     PÁGINA DE SERVIÇOS – NAVEGAÇÃO INTERNA
   ======================================== */
   const sidebarLinks = document.querySelectorAll(".sidebar-link");
   const sections = document.querySelectorAll(".service-section");
@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
   sidebarLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
-
       sidebarLinks.forEach((l) => l.classList.remove("active"));
       this.classList.add("active");
 
@@ -60,82 +59,147 @@ document.addEventListener("DOMContentLoaded", () => {
       if (targetSection) {
         const headerHeight = 140;
         const targetPosition = targetSection.offsetTop - headerHeight - 60;
-
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        });
-      }
-    });
-  });
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    const headerHeight = 140;
-    const scrollPosition = window.scrollY + headerHeight + 100;
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-
-      if (
-        scrollPosition >= sectionTop &&
-        scrollPosition < sectionTop + sectionHeight
-      ) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    sidebarLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active");
+        window.scrollTo({ top: targetPosition, behavior: "smooth" });
       }
     });
   });
 
   /* ========================================
-     FAQ ACCORDION – MERGULHO
+     MENU MOBILE (HAMBURGUER)
   ======================================== */
-  const faqItems = document.querySelectorAll(".faq-item");
+  const menuToggle = document.querySelector(".mobile-menu-toggle");
+  const navList = document.querySelector(".nav-list");
 
-  if (faqItems.length > 0) {
-    faqItems.forEach((item) => {
-      const button = item.querySelector(".faq-question");
+  if (menuToggle && navList) {
+    menuToggle.addEventListener("click", () => {
+      navList.classList.toggle("mobile-menu-open");
+      menuToggle.classList.toggle("active");
+      const isOpen = navList.classList.contains("mobile-menu-open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
 
-      button.addEventListener("click", () => {
-        const isExpanded = item.classList.contains("active");
-        
-        // Fecha os outros
-        faqItems.forEach((i) => {
-          if (i !== item) {
-            i.classList.remove("active");
-            i.querySelector(".faq-question").setAttribute("aria-expanded", "false");
-          }
-        });
-
-        // Alterna o atual
-        item.classList.toggle("active");
-        button.setAttribute("aria-expanded", !isExpanded);
+    // Fecha menu ao clicar em links comuns (exceto o que tem dropdown)
+    const navLinks = document.querySelectorAll(".nav-link:not(.nav-link-dropdown), .dropdown-link");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navList.classList.remove("mobile-menu-open");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
       });
     });
   }
 
   /* ========================================
-     DROPDOWN MENU
+     DROPDOWN MOBILE TOGGLE (SERVIÇOS)
   ======================================== */
-  document.querySelectorAll(".nav-link-dropdown").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
+  const dropdownToggle = document.querySelector(".nav-link-dropdown");
+  const navItem = document.querySelector(".nav-item-dropdown");
+
+  if (dropdownToggle && navItem) {
+    dropdownToggle.addEventListener("click", function (e) {
+      // Se for mobile, abre o submenu em vez de navegar
+      if (window.innerWidth <= 767) {
+        e.preventDefault();
+        e.stopPropagation();
+        navItem.classList.toggle("active");
+      }
+    });
+  }
+
+  /* ========================================
+     FAQ ACCORDION
+  ======================================== */
+  const faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach((item) => {
+    const button = item.querySelector(".faq-question");
+    button.addEventListener("click", () => {
+      const isExpanded = item.classList.contains("active");
+      faqItems.forEach((i) => i.classList.remove("active"));
+      if (!isExpanded) item.classList.add("active");
     });
   });
 
+  /* ========================================
+     MODAL DE CONTATO
+  ======================================== */
+  const modalOverlay = document.getElementById("contact-modal-overlay");
+  const modalClose = document.querySelector(".modal-close");
+  const contactForm = document.getElementById("contact-form");
+  const formSuccess = document.getElementById("form-success");
+  const formError = document.getElementById("form-error");
+  const openModalButtons = document.querySelectorAll('[href="#contato"], .btn-contact');
+
+  openModalButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault(); // ISSO É ESSENCIAL: Impede a página de pular/rolar
+    openModal();        // Chama a função que abre o seu formulário
+  });
+});
+
+  function openModal() {
+    modalOverlay.classList.add("active");
+    document.body.classList.add("modal-open");
+  }
+
+  function closeModal() {
+    modalOverlay.classList.remove("active");
+    document.body.classList.remove("modal-open");
+    if(formSuccess) formSuccess.style.display = "none";
+    if(formError) formError.style.display = "none";
+  }
+
+  openModalButtons.forEach(btn => btn.addEventListener("click", (e) => { e.preventDefault(); openModal(); }));
+  if (modalClose) modalClose.addEventListener("click", closeModal);
+  if (modalOverlay) {
+    modalOverlay.addEventListener("click", (e) => { if (e.target === modalOverlay) closeModal(); });
+  }
 
   /* ========================================
-     ANO DINÂMICO E ATUAL NO RODAPÉ
+     ENVIO DO FORMULÁRIO (FORMSPREE)
+  ======================================== */
+  if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const submitButton = contactForm.querySelector(".btn-submit");
+      submitButton.disabled = true;
+      submitButton.textContent = "Enviando...";
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          formSuccess.style.display = "block";
+          contactForm.reset();
+          setTimeout(closeModal, 3000);
+        } else {
+          formError.style.display = "block";
+        }
+      } catch (error) {
+        formError.style.display = "block";
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Enviar Mensagem";
+      }
+    });
+  }
+
+  /* ========================================
+     UTILITÁRIOS (ANO E TELEFONE)
   ======================================== */
   const yearSpan = document.getElementById("current-year");
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
+  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+  const phoneInput = document.getElementById("phone");
+  if (phoneInput) {
+    phoneInput.addEventListener("input", (e) => {
+      let v = e.target.value.replace(/\D/g, "");
+      v = v.replace(/^(\d{2})(\d)/g, "($1) $2");
+      v = v.replace(/(\d)(\d{4})$/, "$1-$2");
+      e.target.value = v;
+    });
+  }
 });
