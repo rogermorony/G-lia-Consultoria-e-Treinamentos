@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/globals.css">
   <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/animation.css">
+
 
   <!-- FAVICON -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -90,7 +92,7 @@
         <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria" class="brand-logo">
       </a>
 
-            <!-- BOTÃO HAMBURGUER -->
+      <!-- BOTÃO HAMBURGUER -->
       <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -104,24 +106,57 @@
           <!-- ITEM COM DROPDOWN -->
           <li class="nav-item-dropdown">
             <a href="#servicos" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
-              role="button">Serviços</a>
+              role="button">
+              Serviços
+            </a>
+
             <div class="dropdown-menu" aria-label="Submenu de Serviços" role="menu">
-              <a href="solucoes-climaticas.html" class="dropdown-link" role="menuitem">Soluções Climáticas e Baseadas na
-                Natureza</a>
-              <a href="seguranca-alimentar.html" class="dropdown-link">Segurança e qualidade alimentar</a>
-              <a href="ciclo-vida.html" class="dropdown-link">Avaliação do Ciclo de Vida</a>
-              <a href="relatorios-sustentabilidade.html" class="dropdown-link">Relatórios de sustentabilidade</a>
-              <a href="financas-sustentaveis.html" class="dropdown-link">Consultoria em finanças sustentáveis</a>
-              <a href="cadeias-valor.html" class="dropdown-link">Consultoria em Cadeias de Valor Sustentáveis</a>
-              <a href="treinamentos.html" class="dropdown-link">Treinamentos</a>
+
+              <a href="diagnostico-situacional.html" class="dropdown-link" role="menuitem">
+                Diagnóstico Situacional em Sustentabilidade e ESG
+              </a>
+
+              <a href="mapeamento-impactos-materialidade.html" class="dropdown-link" role="menuitem">
+                Mapeamento de Impactos, Análise e Revisão de Materialidade
+              </a>
+
+              <a href="governanca-sustentabilidade.html" class="dropdown-link" role="menuitem">
+                Governança em Sustentabilidade
+              </a>
+
+              <a href="relatorios-sustentabilidade.html" class="dropdown-link" role="menuitem">
+                Relatórios de Sustentabilidade
+              </a>
+
+              <a href="projetos-esg.html" class="dropdown-link" role="menuitem">
+                Elaboração de Projetos ESG
+              </a>
+
+              <a href="cultura-aprendizagem.html" class="dropdown-link" role="menuitem">
+                Cultura & Aprendizagem
+              </a>
+
+              <a href="inventario-gee.html" class="dropdown-link" role="menuitem">
+                Inventário de Emissões de Gases de Efeito Estufa
+              </a>
+
+              <a href="investimento-social-estrategico.html" class="dropdown-link" role="menuitem">
+                Investimento Social Estratégico
+              </a>
+
             </div>
           </li>
 
           <li><a href="#insights" class="nav-link">Insights</a></li>
           <li><a href="quem-somos.html" class="nav-link">Quem somos</a></li>
           <a href="https://wa.me/5543988497777?text=Olá! Gostaria de saber mais sobre consultoria e treinamentos da Gália."
-            target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Falar no WhatsApp">Fale
-            Conosco</a>
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp"
+            aria-label="Falar no WhatsApp">
+
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <span>Fale Conosco</span>
+          </a>
+
         </ul>
       </nav>
     </div>
@@ -230,21 +265,31 @@
 
         <!-- CONTEÚDO -->
         <div class="value-content">
-          <h2 class="section-title">VALOR QUE OFERECEMOS</h2>
-          <h1 class="section-title-h1">
+
+          <h2 class="section-title reveal from-right">
+            VALOR QUE OFERECEMOS
+          </h2>
+
+          <h1 class="section-title-h1 reveal from-right delay-1">
             Orientação especializada<br>
             para apoiar o sucesso<br>
             da sua empresa
           </h1>
-          <p class="value-description">
+
+          <p class="value-description reveal from-right delay-2">
             Nosso objetivo é claro: trabalhar em parceria para que você alcance e, sempre que possível, supere as metas
             do seu negócio, garantindo qualidade em cada etapa. A experiência acumulada pela nossa equipe ao longo de
             décadas enfrentando desafios ambientais e sociais complexos sustenta uma atuação precisa e consistente. Ao
             trabalhar conosco, sua organização conta com suporte para gerir riscos, identificar oportunidades e gerar
             valor, fortalecendo a resiliência e ampliando o impacto positivo.
           </p>
-          <button class="btn btn-primary" aria-label="Saiba mais">Saiba Mais</button>
+
+          <a href="quem-somos.html" class="btn btn-primary reveal from-right delay-3" aria-label="Saiba mais">
+            Saiba Mais
+          </a>
+
         </div>
+
       </div>
     </section>
 
@@ -261,14 +306,19 @@
 
           <!-- CONTEÚDO -->
           <div class="approach-content">
-            <h2 class="section-title approach-subtitle">A NOSSA ABORDAGEM</h2>
-            <h1 class="approach-title">
+
+            <h2 class="section-title approach-subtitle reveal from-left">
+              A NOSSA ABORDAGEM
+            </h2>
+
+            <h1 class="approach-title reveal from-left delay-1">
               Combinar clareza com<br>
               estratégia para o<br>
               ajudar a chegar ao seu<br>
               destino
             </h1>
-            <p class="approach-description">
+
+            <p class="approach-description reveal from-left delay-2">
               Compreender suas necessidades, construir confiança e identificar soluções viáveis são nossas prioridades.
               Como seu parceiro de confiança, nosso trabalho começa ao ouvir atentamente e, a partir disso, oferecer o
               conhecimento, a orientação e as ações necessárias para alcançar seus objetivos em cada etapa.
@@ -276,8 +326,9 @@
               busca por um retorno significativo sobre o investimento orienta nossa abordagem e garante resultados
               consistentes.
             </p>
-            <button class="btn btn-primary">Fale com um especialista</button>
+
           </div>
+
 
           <!-- VISUAL: VÍDEO DA ESTRADA -->
           <div class="approach-media">
@@ -292,7 +343,7 @@
       <!-- ==========================================
            SEÇÃO 2: EXPLORE AS SOLUÇÕES (Cards)
            ========================================== -->
-      <div class="solutions-section" id="solutions"> 
+      <div class="solutions-section" id="solutions">
 
         <!-- LINHA DECORATIVA CURVA -->
         <div class="solutions-decorative-curve"></div>
@@ -301,35 +352,48 @@
 
           <!-- CONTEÚDO -->
           <div class="solutions-content">
-            <h2 class="section-title solutions-subtitle">EXPLORE AS NOSSAS SOLUÇÕES</h2>
-            <h1 class="solutions-title">
+
+            <h2 class="section-title solutions-subtitle reveal from-left">
+              EXPLORE AS NOSSAS SOLUÇÕES
+            </h2>
+
+            <h1 class="solutions-title reveal from-left delay-1">
               Orientar empresas<br>
               para um futuro em que<br>
               lucro, pessoas e<br>
               planeta prosperem<br>
               juntos
             </h1>
-            <button class="btn btn-primary">Fale com um especialista</button>
+
+            <!-- Botão opcional -->
+            <!--
+  <a href="#contato"
+     class="btn btn-primary reveal from-left delay-2">
+     Fale com um especialista
+  </a>
+  -->
+
           </div>
+
 
           <!-- CARDS SOLUÇÕES -->
           <div class="solutions-cards">
 
             <!-- CARD 1 -->
-            <a href="solucoes-climaticas.html" class="solution-card">
-              <span>Soluções Climáticas e Sustentabilidade Territorial</span>
+            <a href="diagnostico-situacional.html" class="solution-card">
+              <span>Diagnóstico situacional em sustentabilidade e ESG</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
             <!-- CARD 2 -->
-            <a href="#" class="solution-card">
-              <span>Segurança e sustentabilidade alimentar</span>
+            <a href="mapeamento-impactos-materialidade.html" class="solution-card">
+              <span>Mapeamento de Impactos, Análise e Revisão de Materialidade</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
             <!-- CARD 3 -->
-            <a href="#" class="solution-card">
-              <span>Avaliação do Ciclo de Vida</span>
+            <a href="analise-de-risco-e-oportunidades-esg.html" class="solution-card">
+              <span>Análise de Riscos e Oportunidades ESG</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
@@ -369,19 +433,29 @@
 
           <!-- CONTEÚDO -->
           <div class="connect-content">
-            <h2 class="section-title connect-subtitle">CONECTE-SE CONOSCO</h2>
-            <h1 class="connect-title">
+
+            <h2 class="section-title connect-subtitle reveal from-left">
+              CONECTE-SE CONOSCO
+            </h2>
+
+            <h1 class="connect-title reveal from-left delay-1">
               Oferecemos apoio<br>
               personalizado em todas<br>
               as etapas
             </h1>
-            <p class="connect-description">
+
+            <p class="connect-description reveal from-left delay-2">
               Sejam os desafios da sua organização, as realidades do setor, os requisitos de relatórios ou normas, os
               desafios de conformidade regulatória ou em outra área sensível, entendemos e trazemos as soluções que
               sua organização precisa.
             </p>
-            <button class="btn btn-primary">Fale com um especialista</button>
+
+            <a href="#contato" class="btn btn-primary reveal from-left delay-3">
+              Fale com um especialista
+            </a>
+
           </div>
+
 
           <!-- VISUAL: VÍDEO DA CONEXÃO -->
           <div class="connect-media">
@@ -469,11 +543,116 @@
     </div>
   </footer>
 
+
+  <!-- ========================================
+     MODAL DE CONTATO - GÁLIA CONSULTORIA
+     ======================================== -->
+
+  <!-- Overlay (fundo escuro) -->
+  <div id="contact-modal-overlay" class="modal-overlay">
+
+    <!-- Modal Container -->
+    <div class="modal-container">
+
+      <!-- Botão Fechar -->
+      <button class="modal-close" aria-label="Fechar modal">
+        <ion-icon name="close"></ion-icon>
+      </button>
+
+      <!-- Conteúdo do Modal -->
+      <div class="modal-content">
+
+        <!-- Cabeçalho -->
+        <div class="modal-header">
+          <h2>Vamos Conversar</h2>
+          <p>Preencha o formulário e entraremos em contato em breve.</p>
+        </div>
+
+        <!-- Formulário -->
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+
+          <!-- Nome e Sobrenome -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Nome *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Sobrenome *</label>
+              <input type="text" id="lastName" name="lastName" required placeholder="Seu sobrenome">
+            </div>
+          </div>
+
+          <!-- Empresa e Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">Empresa *</label>
+              <input type="text" id="company" name="company" required placeholder="Nome da empresa">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+          </div>
+
+          <!-- Telefone e País -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="country">País *</label>
+              <select id="country" name="country" required>
+                <option value="">Selecione</option>
+                <option value="BR" selected>Brasil</option>
+                <option value="PT">Portugal</option>
+                <option value="US">Estados Unidos</option>
+                <option value="AR">Argentina</option>
+                <option value="CL">Chile</option>
+                <option value="MX">México</option>
+                <option value="OTHER">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Mensagem -->
+          <div class="form-group">
+            <label for="message">Qual informação você está buscando? *</label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Descreva brevemente sua necessidade..."></textarea>
+          </div>
+
+          <!-- Botão Submit -->
+          <button type="submit" class="btn btn-primary btn-submit">
+            Enviar Mensagem
+          </button>
+
+          <!-- Mensagem de sucesso (oculta) -->
+          <div id="form-success" class="form-message form-success" style="display: none;">
+            ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
+          </div>
+
+          <!-- Mensagem de erro (oculta) -->
+          <div id="form-error" class="form-message form-error" style="display: none;">
+            ✗ Erro ao enviar mensagem. Por favor, tente novamente.
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
   <!-- ========================================
        SCRIPTS
        ======================================== -->
   <!-- JAVASCRIPT PRINCIPAL -->
   <script src="src/js/script.js" defer></script>
+  <script src="src/js/animation.js" defer></script>
 
   <!-- IONICONS  -->
   <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>

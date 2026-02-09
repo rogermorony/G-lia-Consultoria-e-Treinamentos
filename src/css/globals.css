@@ -119,6 +119,17 @@ body {
   box-shadow: 0 5px 15px rgba(184, 233, 134, 0.3);
 }
 
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* espaço entre ícone e texto */
+}
+
+.btn-whatsapp ion-icon {
+  font-size: 20px;
+}
+
+
 
 /* ========================================
    HEADER
@@ -1364,7 +1375,6 @@ body {
    ======================================== */
 
 .service-dive-faq {
-  margin-top: -200px; /* Alinha com o topo do grid */
   background: #ffffff;
   color: #1c2a44;
   border-radius: 28px;
@@ -1372,10 +1382,15 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 450px;
-  height: 210%;
+  height: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  z-index: 3;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  margin-top: -200px;
 }
 
 .service-dive-faq h3 {
@@ -1386,16 +1401,19 @@ body {
 
 .faq-item {
   border-top: 1px solid #e4e8f0;
+  margin-bottom: 50px;
 }
 
 .faq-list {
+  max-height: 800px;
   overflow-y: auto;
-  padding-right: 8px;
-  max-height: 500px;
+  padding-right: 15px;
+  scrollbar-width: thin; 
+  scrollbar-color: #1c2a44 #f0f0f0;
 }
 
 .faq-question {
-  width: 100%;
+  width: 95%;
   padding: 18px 0;
   background: none;
   border: none;
@@ -1413,6 +1431,7 @@ body {
   font-size: 22px;
   transition: transform 0.3s ease;
   flex-shrink: 0;
+  margin-left: 50px;
 }
 
 .faq-answer {
@@ -1881,3 +1900,65 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+
+
+
+
+
+
+/* SUBMENU MATERIALIDADE */
+
+.materiality-submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 32px 0;
+  width: 100%;
+}
+
+/* Botões – base (mobile-first) */
+.materiality-btn {
+  padding: 14px 20px;
+  border-radius: 999px;
+  background-color: #f4f6f5;
+  color: #1e2d2b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+/* Hover */
+.materiality-btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* 📱 Mobile – conforto de toque */
+@media (max-width: 767px) {
+  .materiality-btn {
+    width: 97%;
+    font-size: 14px;
+  }
+}
+
+/* 🖥 Desktop – compacto e elegante */
+@media (min-width: 1024px) {
+  .materiality-submenu {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 12px 16px;
+    width: auto;
+  }
+
+  .materiality-btn {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+  }
+}
+
+
+

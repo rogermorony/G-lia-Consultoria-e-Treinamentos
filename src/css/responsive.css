@@ -1,4 +1,182 @@
 /* ==========================================================================
+   RESPONSIVE.CSS - ORGANIZADO POR SEÇÃO
+   Arquivo reorganizado mantendo 100% do conteúdo original
+   ========================================================================== */
+
+/* ==========================================================================
+   1. VARIÁVEIS E UTILITIES
+   ========================================================================== */
+
+/* ========================================
+   HAMBURGUER — ESCONDIDO NO DESKTOP
+   ======================================== */
+.mobile-menu-toggle {
+  display: none;
+  margin-left: 120px;
+}
+
+/* ==========================================================================
+   2. DESKTOP BREAKPOINTS (Desktop → Tablet → Mobile)
+   ========================================================================== */
+
+/* ========================================
+   DESKTOP PEQUENO (≤1200px)
+   ======================================== */
+@media (max-width: 1200px) {
+  
+  /* Container menor */
+  .header-wrap,
+  .service-hero-wrap,
+  .service-container {
+    padding: 0 32px;
+  }
+
+  /* FAQ ajuste */
+  .service-dive-faq {
+    max-width: 400px;
+  }
+
+  /* Curva decorativa menor */
+  .decorative-service-curve {
+    width: 80%;
+    margin-left: 200px;
+  }
+}
+
+/* ========================================
+   TABLET (768px - 1024px)
+   ======================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* HEADER */
+  .brand-logo {
+    height: 120px;
+    margin-top: 30px;
+  }
+
+  .header-wrap {
+    height: 100px;
+  }
+
+  .nav-list {
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .service-hero {
+    min-height: 500px;
+    padding: 140px 0 80px;
+  }
+
+  .service-hero-title {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  .service-hero-text {
+    font-size: 18px;
+  }
+
+  /* FOCO */
+  .service-content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-description {
+    width: 100%;
+    max-width: none;
+  }
+
+  .service-sidebar {
+    transform: translateY(0);
+    margin-top: 20px;
+  }
+
+  /* MERGULHO */
+  .service-dive {
+    padding: 80px 0 0 0;
+  }
+
+  .service-dive-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section-main-title-dive {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .service-description-dive {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .service-dive-faq {
+    margin-top: 0;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .service-dive-image {
+    max-width: 100%;
+    margin: 40px auto 0;
+  }
+
+  /* ACELERAR E VITÓRIA */
+  .service-accelerate-grid,
+  .service-victory-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-accelerate-text,
+  .service-victory-text {
+    max-width: 100%;
+  }
+
+  .service-victory-image img {
+    width: 100%;
+    max-width: 450px;
+    transform: translateY(0);
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Esconde curva decorativa */
+  .decorative-service-curve {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   3. MOBILE (≤767px) - ABOUT PAGE
+   ========================================================================== */
+
+/* ========================================
+   VARIÁVEIS MOBILE
+   ======================================== */
+@media (max-width: 767px) {
+  :root {
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 36px;
+  }
+}
+
+/* ==========================================================================
    ABOUT HERO - AJUSTE DE GRADIENTE (MESMO ESTILO DA INDEX)
    ========================================================================== */
 @media (max-width: 767px) {
@@ -682,6 +860,10 @@
   }
 }
 
+/* ==========================================================================
+   4. MOBILE (≤767px) - HOMEPAGE (INDEX)
+   ========================================================================== */
+
 /* ========================================
    AJUSTE DE ALTURA DO GRADIENTE (OVERLAY)
    ======================================== */
@@ -711,6 +893,7 @@
     overflow: hidden !important;
   }
 }
+
 /* ========================================
    HERO CARROSSEL RESPONSIVO
    ======================================== */
@@ -789,167 +972,11 @@
   }
 }
 
+/* ==========================================================================
+   5. MOBILE (≤767px) - HEADER & NAVIGATION
+   ========================================================================== */
 
-/* ========================================
-   HAMBURGUER — ESCONDIDO NO DESKTOP
-   ======================================== */
-.mobile-menu-toggle {
-  display: none;
-  margin-left: 120px;
-}
-
-/* ========================================
-   DESKTOP PEQUENO (≤1200px)
-   ======================================== */
-@media (max-width: 1200px) {
-  
-  /* Container menor */
-  .header-wrap,
-  .service-hero-wrap,
-  .service-container {
-    padding: 0 32px;
-  }
-
-  /* FAQ ajuste */
-  .service-dive-faq {
-    max-width: 400px;
-  }
-
-  /* Curva decorativa menor */
-  .decorative-service-curve {
-    width: 80%;
-    margin-left: 200px;
-  }
-}
-
-/* ========================================
-   TABLET (768px - 1024px)
-   ======================================== */
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* HEADER */
-  .brand-logo {
-    height: 120px;
-    margin-top: 30px;
-  }
-
-  .header-wrap {
-    height: 100px;
-  }
-
-  .nav-list {
-    gap: 30px;
-  }
-
-  .nav-link {
-    font-size: 14px;
-  }
-
-  /* HERO */
-  .service-hero {
-    min-height: 500px;
-    padding: 140px 0 80px;
-  }
-
-  .service-hero-title {
-    font-size: 36px;
-    margin-top: 30px;
-  }
-
-  .service-hero-text {
-    font-size: 18px;
-  }
-
-  /* FOCO */
-  .service-content-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .service-description {
-    width: 100%;
-    max-width: none;
-  }
-
-  .service-sidebar {
-    transform: translateY(0);
-    margin-top: 20px;
-  }
-
-  /* MERGULHO */
-  .service-dive {
-    padding: 80px 0 0 0;
-  }
-
-  .service-dive-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .section-main-title-dive {
-    font-size: 2rem;
-    width: 100%;
-  }
-
-  .service-description-dive {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .service-dive-faq {
-    margin-top: 0;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .service-dive-image {
-    max-width: 100%;
-    margin: 40px auto 0;
-  }
-
-  /* ACELERAR E VITÓRIA */
-  .service-accelerate-grid,
-  .service-victory-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .service-accelerate-text,
-  .service-victory-text {
-    max-width: 100%;
-  }
-
-  .service-victory-image img {
-    width: 100%;
-    max-width: 450px;
-    transform: translateY(0);
-    margin: 0 auto;
-    display: block;
-  }
-
-  /* Esconde curva decorativa */
-  .decorative-service-curve {
-    display: none;
-  }
-}
-
-/* ========================================
-   MOBILE (≤767px)
-   ======================================== */
 @media (max-width: 767px) {
-  
-  /* ========================================
-     VARIÁVEIS MOBILE
-     ======================================== */
-  :root {
-    --spacing-md: 24px;
-    --spacing-lg: 40px;
-    --spacing-xl: 60px;
-    --font-size-lg: 18px;
-    --font-size-xl: 24px;
-    --font-size-2xl: 32px;
-    --font-size-3xl: 36px;
-  }
 
   /* ========================================
      HEADER & NAVIGATION
@@ -1083,7 +1110,6 @@
   /* ========================================
    DROPDOWN MOBILE — ABRE COM .active (click)
    ======================================== */
-@media (max-width: 767px) {
   
   /* 1. Reset de estilos do Desktop */
   .nav-item-dropdown .dropdown-menu {
@@ -1163,6 +1189,12 @@
     text-align: center;
   }
 }
+
+/* ==========================================================================
+   6. MOBILE (≤767px) - SERVICE PAGES
+   ========================================================================== */
+
+@media (max-width: 767px) {
 
   /* ========================================
      BOTÕES
@@ -1274,6 +1306,13 @@
     gap: 30px;
   }
 
+  .section-label-dive {
+    display: inline-block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+
   .section-main-title-dive {
     font-size: 24px;
     width: 100%;
@@ -1286,39 +1325,42 @@
     margin-bottom: 16px;
     line-height: 1.6;
   }
+}
 
-  /* FAQ Mobile */
+/* ========================================
+   MOBILE - FAQ ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 768px) {
   .service-dive-faq {
-    margin-top: 0;
-    height: auto;
-    max-width: 100%;
+    position: relative !important;  /* FORÇA voltar pro fluxo normal */
+    top: -40px;
+    right: auto;
+    margin: 40px auto 0 auto;      /* Centraliza */
+    max-width: 90%;
     padding: 24px;
-    border-radius: 20px;
-  }
-
-  .service-dive-faq h3 {
-    font-size: 18px;
-    margin-bottom: 16px;
   }
 
   .faq-list {
-    max-height: none;
+    max-height: 400px;
   }
 
   .faq-question {
-    font-size: 15px;
+    font-size: 0.95rem;
     padding: 14px 0;
   }
 
-  .faq-answer p {
-    font-size: 14px;
-    padding-bottom: 12px;
-    line-height: 1.5;
+  .faq-icon {
+    margin-left: 15px;
+    font-size: 18px;
   }
 
-  .faq-item.active .faq-answer {
-    max-height: 500px;
+  .faq-answer p {
+    font-size: 0.9rem;
   }
+}
+
+@media (max-width: 767px) {
 
   /* Imagem Mergulho */
   .service-dive-image {
@@ -1482,6 +1524,10 @@
   }
 }
 
+/* ==========================================================================
+   7. CONTACT MODAL
+   ========================================================================== */
+
 /* ========================================
    RESPONSIVIDADE DO MODAL DE CONTATO
    ======================================== */
@@ -1552,6 +1598,9 @@
   }
 }
 
+/* ==========================================================================
+   8. MOBILE EXTRA SMALL & LANDSCAPE
+   ========================================================================== */
 
 /* ========================================
    MOBILE PEQUENO (≤480px)
@@ -1597,6 +1646,10 @@
     margin-bottom: 10px;
   }
 }
+
+/* ==========================================================================
+   9. ACCESSIBILITY
+   ========================================================================== */
 
 /* ========================================
    AJUSTES DE ACESSIBILIDADE
