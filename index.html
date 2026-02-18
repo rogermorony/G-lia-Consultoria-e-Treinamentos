@@ -41,7 +41,7 @@
   <meta property="og:image" content="https://www.fullonline.net/src/imagens/galia-consultoria-e-treinamentos-og.jpg">
 
   <script type="application/ld+json">
-{
+
   "@context": "https://schema.org",
   "@graph": [
 
@@ -87,6 +87,7 @@
        ======================================== -->
   <header class="site-header" role="banner">
     <div class="container header-wrap">
+
       <!-- LOGO -->
       <a href="index.html" aria-label="Ir para o início">
         <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria" class="brand-logo">
@@ -103,48 +104,69 @@
       <nav id="nav-principal" aria-label="Navegação principal">
         <ul class="nav-list">
 
-          <!-- ITEM COM DROPDOWN -->
-          <li class="nav-item-dropdown">
-            <a href="#servicos" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
+          <!-- ITEM COM MEGA MENU -->
+          <li class="nav-item-dropdown mega-menu-trigger">
+            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
               role="button">
               Serviços
             </a>
 
-            <div class="dropdown-menu" aria-label="Submenu de Serviços" role="menu">
+            <!-- MEGA MENU -->
+            <div class="mega-menu" aria-label="Submenu de Serviços" role="menu">
+              <div class="mega-menu-content">
 
-              <a href="diagnostico-situacional.html" class="dropdown-link" role="menuitem">
-                Diagnóstico Situacional em Sustentabilidade e ESG
-              </a>
+                <!-- COLUNA 1: Sustentabilidade e ESG -->
+                <div class="mega-menu-column">
+                  <h2 class="mega-menu-title">Sustentabilidade e ESG</h2>
+                  <ul class="mega-menu-list">
+                    <li><a href="diagnostico-situacional-em-sustentabilidade-e-esg.html">Diagnóstico Situacional em
+                        Sustentabilidade e ESG</a></li>
+                    <li><a href="mapeamento-de-impactos-analise-e-revisao-de-materialidade.html">Mapeamento de Impactos,
+                        Análise de Materialidade</a></li>
+                    <li><a href="analise-de-risco-e-oportunidades-esg.html">Análise de Risco e Oportunidade ESG</a></li>
+                    <li><a href="mapeamento-priorizacao-e-engajamento-de-stakeholders.html">Mapeamento, Priorização e
+                        Engajamento de Stakeholders</a></li>
+                    <li><a href="plano-estrategico-de-sustentabilidade-e-roadmap-esg.html">Plano Estratégico de
+                        Sustentabilidade e Roadmap ESG</a></li>
+                    <li><a href="politica-de-sustentabilidade.html">Política de Sustentabilidade</a></li>
+                  </ul>
+                </div>
 
-              <a href="mapeamento-impactos-materialidade.html" class="dropdown-link" role="menuitem">
-                Mapeamento de Impactos, Análise e Revisão de Materialidade
-              </a>
+                <!-- COLUNA 2: Mais ESG -->
+                <div class="mega-menu-column">
+                  <ul class="mega-menu-list" style="margin-top: 2.5rem;">
+                    <li><a href="estrutura-avaliacao-indicadores-desempenho-esg.html">Estrutura e Avaliação de
+                        Indicadores de Desempenho em ESG</a></li>
+                    <li><a href="estrutura-modelo-governanca-sustentabilidade.html">Estruturação de Modelo de Governança
+                        em Sustentabilidade</a></li>
+                    <li><a href="relatorios-de-sustentabilidade.html">Relatórios de Sustentabilidade</a></li>
+                    <li><a href="elaboracao-de-projetos-esg.html">Elaboração de Projeto ESG</a></li>
+                    <li><a href="estruturas-diretrizes-padroes.html">Estruturas, Diretrizes e Padrões (GRI, SASB, ODS,
+                        Direitos Humanos e Outros)</a></li>
+                  </ul>
 
-              <a href="governanca-sustentabilidade.html" class="dropdown-link" role="menuitem">
-                Governança em Sustentabilidade
-              </a>
+                  <h3 class="mega-menu-title" style="margin-top: 1.5rem;">Investimento Social</h3>
+                  <ul class="mega-menu-list">
+                    <li><a href="investimento-social-estrategico.html">Investimento Social Estratégico</a></li>
+                  </ul>
+                </div>
 
-              <a href="relatorios-sustentabilidade.html" class="dropdown-link" role="menuitem">
-                Relatórios de Sustentabilidade
-              </a>
+                <!-- COLUNA 3: FEATURED CARD -->
+                <div class="mega-menu-column mega-menu-featured">
+                  <div class="featured-card">
+                    <img src="src/imagens/landscape.jpg" alt="Gália Consultoria ESG">
+                    <div class="featured-content">
+                      <h3>Cultura e Aprendizagem</h3>
+                      <p>Sustentabilidade, ESG e Investimento Social Estratégico com soluções personalizadas para sua
+                        organização.</p>
+                      <a href="cultura-e-aprendizagem.html" class="featured-btn">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
 
-              <a href="projetos-esg.html" class="dropdown-link" role="menuitem">
-                Elaboração de Projetos ESG
-              </a>
-
-              <a href="cultura-aprendizagem.html" class="dropdown-link" role="menuitem">
-                Cultura & Aprendizagem
-              </a>
-
-              <a href="inventario-gee.html" class="dropdown-link" role="menuitem">
-                Inventário de Emissões de Gases de Efeito Estufa
-              </a>
-
-              <a href="investimento-social-estrategico.html" class="dropdown-link" role="menuitem">
-                Investimento Social Estratégico
-              </a>
-
+              </div>
             </div>
+
           </li>
 
           <li><a href="#insights" class="nav-link">Insights</a></li>
@@ -372,56 +394,64 @@
      Fale com um especialista
   </a>
   -->
-
           </div>
 
-
-          <!-- CARDS SOLUÇÕES -->
           <div class="solutions-cards">
 
             <!-- CARD 1 -->
-            <a href="diagnostico-situacional.html" class="solution-card">
-              <span>Diagnóstico situacional em sustentabilidade e ESG</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
+            <details class="solution-accordion">
+              <summary class="solution-card">
+                <span>Sustentabilidade e ESG</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </summary>
+
+              <div class="solution-submenu">
+                <a href="diagnostico-situacional-em-sustentabilidade-e-esg.html">Diagnóstico Situacional em
+                  Sustentabilidade e ESG</a>
+                <a href="mapeamento-de-impactos-analise-e-revisao-de-materialidade.html">Mapeamento de Impactos, Análise
+                  de Materialidade</a>
+                <a href="analise-de-risco-e-oportunidades-esg.html">Análise de Risco e Oportunidade ESG</a>
+                <a href="mapeamento-priorizacao-engajamento-stakeholders.html">Mapeamento, Priorização e Engajamento de
+                  Stakeholders</a>
+                <a href="plano-estrategico-sustentabilidade-roadmap-esg.html">Plano Estratégico de Sustentabilidade e
+                  Roadmap ESG</a>
+                <a href="politica-de-sustentabilidade.html">Política de Sustentabilidade</a>
+                <a href="estrutura-avaliacao-indicadores-desempenho-esg.html">Estrutura e Avaliação de Indicadores de
+                  Desempenho em ESG</a>
+                <a href="estrutura-modelo-governanca-sustentabilidade.html">Estruturação de Modelo de Governança em
+                  Sustentabilidade</a>
+                <a href="relatorios-de-sustentabilidade.html">Relatórios de Sustentabilidade</a>
+                <a href="elaboracao-de-projetos-esg.html">Elaboração de Projeto ESG</a>
+                <a href="estruturas-diretrizes-padroes.html">Estruturas, Diretrizes e Padrões</a>
+              </div>
+            </details>
 
             <!-- CARD 2 -->
-            <a href="mapeamento-impactos-materialidade.html" class="solution-card">
-              <span>Mapeamento de Impactos, Análise e Revisão de Materialidade</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
+            <details class="solution-accordion">
+              <summary class="solution-card">
+                <span>Investimento Social</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </summary>
+
+              <div class="solution-submenu">
+                <a href="investimento-social-estrategico.html">Investimento Social Estratégico</a>
+              </div>
+            </details>
 
             <!-- CARD 3 -->
-            <a href="analise-de-risco-e-oportunidades-esg.html" class="solution-card">
-              <span>Análise de Riscos e Oportunidades ESG</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
+            <details class="solution-accordion">
+              <summary class="solution-card">
+                <span>Sustentabilidade, ESG e Investimento Social Estratégico</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </summary>
 
-            <!-- CARD 4 -->
-            <a href="#" class="solution-card">
-              <span>Relatórios de Sustentabilidade</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
-
-            <!-- CARD 5 -->
-            <a href="#" class="solution-card">
-              <span>Consultoria em finanças sustentáveis</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
-
-            <!-- CARD 6 -->
-            <a href="#" class="solution-card">
-              <span>Consultoria em Cadeias de Valor Sustentáveis</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
-
-            <!-- CARD 7 -->
-            <a href="treinamentos.html" class="solution-card">
-              <span>Treinamentos</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
+              <div class="solution-submenu">
+                <a href="cultura-e-aprendizagem.html">Cultura e Aprendizagem</a>
+              </div>
+            </details>
 
           </div>
+
         </div>
       </div>
 

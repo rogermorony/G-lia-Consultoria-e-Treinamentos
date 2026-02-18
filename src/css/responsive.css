@@ -1,9 +1,4 @@
 /* ==========================================================================
-   RESPONSIVE.CSS - ORGANIZADO POR SEÇÃO
-   Arquivo reorganizado mantendo 100% do conteúdo original
-   ========================================================================== */
-
-/* ==========================================================================
    1. VARIÁVEIS E UTILITIES
    ========================================================================== */
 
@@ -23,7 +18,6 @@
    DESKTOP PEQUENO (≤1200px)
    ======================================== */
 @media (max-width: 1200px) {
-  
   /* Container menor */
   .header-wrap,
   .service-hero-wrap,
@@ -47,7 +41,6 @@
    TABLET (768px - 1024px)
    ======================================== */
 @media (min-width: 768px) and (max-width: 1024px) {
-  
   /* HEADER */
   .brand-logo {
     height: 120px;
@@ -180,7 +173,6 @@
    ABOUT HERO - AJUSTE DE GRADIENTE (MESMO ESTILO DA INDEX)
    ========================================================================== */
 @media (max-width: 767px) {
-
   .about-hero {
     position: relative;
     min-height: 85vh !important;
@@ -190,21 +182,23 @@
   /* Remova o ::after anterior e use este ::before igual ao da Index */
   .about-hero::before {
     display: block !important;
-    content: '' !important;
+    content: "" !important;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
-    
+
     /* Ajuste de Altura: cobre 65% da imagem para dar leitura ao título */
-    height: 150% !important; 
-    
+    height: 150% !important;
+
     /* Gradiente que some suavemente */
-    background: linear-gradient(to bottom, 
-                rgba(0,0,0,0.7) 0%, 
-                rgba(0,0,0,0.4) 50%, 
-                rgba(0,0,0,0) 100%) !important;
-    
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0) 100%
+    ) !important;
+
     z-index: 2 !important;
     pointer-events: none;
   }
@@ -221,7 +215,7 @@
   /* Container de Texto acima do gradiente */
   .about-hero-wrap {
     position: relative;
-    z-index: 3; 
+    z-index: 3;
     padding-top: 80px !important; /* Joga o texto um pouco mais para cima no mobile */
     text-align: center;
   }
@@ -231,7 +225,6 @@
    ABOUT HERO (PÁGINA QUEM SOMOS)
    ========================================================================== */
 @media (max-width: 767px) {
-
   .about-hero {
     min-height: 90vh !important; /* Quase a tela cheia para dar impacto */
     display: flex !important;
@@ -261,10 +254,13 @@
   /* Overlay para leitura: Se a foto for clara, o texto branco some. 
      Isso aqui cria uma camada escura suave por cima da foto */
   .about-hero::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
     z-index: 2;
   }
 
@@ -305,7 +301,6 @@
    SEÇÃO: VALORES (GRID DE CARDS)
    ========================================================================== */
 @media (max-width: 767px) {
-
   .values-section {
     padding: 60px 0 !important;
   }
@@ -351,7 +346,7 @@
     align-items: center;
     background: var(--color-white);
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra leve para destacar no fundo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra leve para destacar no fundo */
   }
 
   .value-icon-wrapper {
@@ -361,7 +356,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(var(--color-secondary-rgb), 0.1); /* Fundo suave para o ícone */
+    background: rgba(
+      var(--color-secondary-rgb),
+      0.1
+    ); /* Fundo suave para o ícone */
     border-radius: 50%;
   }
 
@@ -388,7 +386,6 @@
    VISÃO (BLOCO COM FUNDO DARK-BLUE)
    ========================================================================== */
 @media (max-width: 767px) {
-
   .vision-block {
     margin-bottom: 60px;
     position: relative;
@@ -397,7 +394,7 @@
   .vision-content {
     display: flex !important;
     /* Inverte a ordem: faz a imagem que está depois do texto no HTML ir para cima */
-    flex-direction: column-reverse !important; 
+    flex-direction: column-reverse !important;
     align-items: center !important;
     text-align: center;
     gap: 30px;
@@ -417,7 +414,9 @@
     top: 15px !important;
     right: 15px !important; /* Deslocamento para o lado oposto ao azul claro se desejar simetria */
     border-radius: 20px;
-    background-color: var(--color-secondary) !important; /* Garante que pegue a cor variável */
+    background-color: var(
+      --color-secondary
+    ) !important; /* Garante que pegue a cor variável */
   }
 
   .vision-img {
@@ -463,7 +462,6 @@
    SEÇÃO: MISSÃO E VISÃO
    ========================================================================== */
 @media (max-width: 767px) {
-
   .mission-vision-section {
     padding-top: 80px !important;
     overflow: hidden;
@@ -552,7 +550,6 @@
    SEÇÃO: CONECTE-SE CONOSCO
    ========================================================================== */
 @media (max-width: 767px) {
-
   .connect-section {
     padding: 60px 0 !important;
     margin-top: -40px;
@@ -607,7 +604,7 @@
     width: 100% !important;
     height: auto !important;
     border-radius: 15px; /* Mantém o padrão visual dos outros vídeos */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
 
   /* Centralização do Botão */
@@ -621,7 +618,6 @@
    SEÇÃO: EXPLORE AS SOLUÇÕES (CARDS)
    ========================================================================== */
 @media (max-width: 767px) {
-
   .solutions-section {
     padding: 60px 0 !important;
     position: relative;
@@ -704,12 +700,10 @@
   }
 }
 
-
 /* ==========================================================================
    SEÇÃO: A NOSSA ABORDAGEM (VÍDEO ESTRADA)
    ========================================================================== */
 @media (max-width: 767px) {
-
   .approach-section {
     padding: 60px 0 !important;
   }
@@ -765,7 +759,7 @@
     width: 100% !important;
     height: auto !important;
     border-radius: 15px; /* Deixa o vídeo elegante no mobile */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 
   /* Garante que o botão fique centralizado */
@@ -779,7 +773,6 @@
    SEÇÃO: VALOR QUE OFERECEMOS
    ========================================================================== */
 @media (max-width: 767px) {
-  
   .value-section {
     padding: 60px 0 !important;
     overflow: hidden;
@@ -826,7 +819,7 @@
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    text-align: center !important; 
+    text-align: center !important;
     padding: 0 20px !important;
     margin-top: -320px;
   }
@@ -868,28 +861,32 @@
    AJUSTE DE ALTURA DO GRADIENTE (OVERLAY)
    ======================================== */
 @media (max-width: 767px) {
-
   /* Se o gradiente for o ::before do slide */
   .carousel-slide::before {
     display: block !important;
-    content: '' !important;
+    content: "" !important;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
-    
+
     /* AJUSTE AQUI: Em vez de 100%, vamos deixar ele cobrir só até o meio */
-    height: 60% !important; 
-    
+    height: 60% !important;
+
     /* Suaviza o final do gradiente para ele não terminar bruscamente */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%) !important;
-    
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ) !important;
+
     z-index: 1 !important;
     pointer-events: none; /* Garante que o gradiente não bloqueie cliques no botão */
   }
 
   /* Garante que o container "corte" qualquer coisa que tente sair */
-  .hero-section, .carousel-slide {
+  .hero-section,
+  .carousel-slide {
     overflow: hidden !important;
   }
 }
@@ -898,7 +895,6 @@
    HERO CARROSSEL RESPONSIVO
    ======================================== */
 @media (max-width: 767px) {
-  
   .hero-section {
     height: 100vh;
     min-height: 550px;
@@ -906,7 +902,8 @@
     overflow: hidden;
   }
 
-  .carousel, .carousel-track {
+  .carousel,
+  .carousel-track {
     height: 100%;
   }
 
@@ -921,12 +918,12 @@
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    
+
     width: 90% !important;
-    max-width: 100% !important; 
+    max-width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
-    
+
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -977,7 +974,6 @@
    ========================================================================== */
 
 @media (max-width: 767px) {
-
   /* ========================================
      HEADER & NAVIGATION
      ======================================== */
@@ -1050,7 +1046,9 @@
     z-index: 998;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
   }
 
   .menu-overlay.active {
@@ -1078,9 +1076,10 @@
     transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-                opacity 0.3s ease,
-                visibility 0.35s ease;
+    transition:
+      transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.3s ease,
+      visibility 0.35s ease;
     overflow-y: auto;
   }
 
@@ -1107,36 +1106,57 @@
     position: relative;
   }
 
+  .dropdown-group-title {
+    color: var(--color-primary);
+    display: block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin: 10px 0px 6px;
+  }
+
+  .dropdown-divider {
+    height: 1px;
+    opacity: 0.12;
+    margin: 10px 0;
+    background: currentColor;
+  }
+
   /* ========================================
    DROPDOWN MOBILE — ABRE COM .active (click)
    ======================================== */
-  
+
   /* 1. Reset de estilos do Desktop */
   .nav-item-dropdown .dropdown-menu {
-    display: block;      /* Mudamos de none para block para permitir animação */
-    position: static;    /* Tira do modo flutuante */
+    display: block; /* Mudamos de none para block para permitir animação */
+    position: static; /* Tira do modo flutuante */
     transform: none;
     box-shadow: none;
     min-width: unset;
     background: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
     margin: 4px 0 8px;
-    padding: 0 16px;     /* Padding lateral apenas */
-    
+    padding: 0 16px; /* Padding lateral apenas */
+
     /* Estado Fechado */
     max-height: 0;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: max-height 0.35s ease, opacity 0.25s ease, visibility 0.25s ease;
+    transition:
+      max-height 0.35s ease,
+      opacity 0.25s ease,
+      visibility 0.25s ease;
   }
 
   /* 2. Estado Aberto (Ativado via JS com a classe .active) */
   .nav-item-dropdown.active .dropdown-menu {
-    max-height: 500px;   /* Altura suficiente para os links */
+    max-height: 500px; /* Altura suficiente para os links */
     opacity: 1;
     visibility: visible;
-    padding: 10px 16px;  /* Adiciona o padding vertical ao abrir */
+    padding: 10px 16px; /* Adiciona o padding vertical ao abrir */
   }
 
   /* 3. Seta de Indicação no item "Serviços" */
@@ -1147,7 +1167,7 @@
   }
 
   .nav-link-dropdown::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 5px;
     top: 50%;
@@ -1195,7 +1215,6 @@
    ========================================================================== */
 
 @media (max-width: 767px) {
-
   /* ========================================
      BOTÕES
      ======================================== */
@@ -1236,7 +1255,6 @@
     font-size: 16px;
     line-height: 1.6;
   }
-
 
   /* ========================================
      SEÇÃO: FOCO
@@ -1333,10 +1351,10 @@
 
 @media (max-width: 768px) {
   .service-dive-faq {
-    position: relative !important;  /* FORÇA voltar pro fluxo normal */
+    position: relative !important; /* FORÇA voltar pro fluxo normal */
     top: -40px;
     right: auto;
-    margin: 40px auto 0 auto;      /* Centraliza */
+    margin: 40px auto 0 auto; /* Centraliza */
     max-width: 90%;
     padding: 24px;
   }
@@ -1361,7 +1379,6 @@
 }
 
 @media (max-width: 767px) {
-
   /* Imagem Mergulho */
   .service-dive-image {
     max-width: 100%;
@@ -1445,19 +1462,19 @@
 
   /* Marca: logo + botão + redes */
   .footer-brand {
-  flex: none;              /* cancela o flex: 0 0 300px do globals */
-  width: 100%;             /* ocupa toda a largura do container */
-  text-align: center;
-  align-items: center;
-  padding-bottom: 32px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
+    flex: none; /* cancela o flex: 0 0 300px do globals */
+    width: 100%; /* ocupa toda a largura do container */
+    text-align: center;
+    align-items: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
 
   .footer-logo {
-  display: block;
-  width: 250px;
-  margin: 0 auto;
-}
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
 
   .footer-brand .btn {
     width: 100%;
@@ -1535,17 +1552,17 @@
 @media (max-width: 767px) {
   /* 1. Ajuste do Container do Modal */
   .modal-container {
-    width: 95%;            /* Quase a largura total da tela */
-    max-height: 90vh;      /* Não deixa o modal ser maior que a altura da tela */
-    padding: 30px 20px;    /* Reduz o padding interno */
-    overflow-y: auto;      /* Permite scroll dentro do modal se o form for longo */
+    width: 95%; /* Quase a largura total da tela */
+    max-height: 90vh; /* Não deixa o modal ser maior que a altura da tela */
+    padding: 30px 20px; /* Reduz o padding interno */
+    overflow-y: auto; /* Permite scroll dentro do modal se o form for longo */
     margin: 10px;
   }
 
   /* 2. Forçar uma coluna nos campos Nome/Sobrenome, etc. */
   .form-row {
     grid-template-columns: 1fr; /* Muda de 2 colunas para 1 */
-    gap: 15px;                  /* Espaço entre os campos empilhados */
+    gap: 15px; /* Espaço entre os campos empilhados */
   }
 
   /* 3. Ajustes de Tipografia */
@@ -1565,8 +1582,8 @@
     margin-bottom: 5px;
   }
 
-  .form-group input, 
-  .form-group select, 
+  .form-group input,
+  .form-group select,
   .form-group textarea {
     padding: 12px;
     font-size: 16px; /* Evita que o iOS dê zoom automático ao focar no campo */
@@ -1592,7 +1609,7 @@
   .modal-container {
     padding: 20px 15px;
   }
-  
+
   .modal-header h2 {
     font-size: 20px;
   }
@@ -1606,7 +1623,6 @@
    MOBILE PEQUENO (≤480px)
    ======================================== */
 @media (max-width: 480px) {
-  
   /* Ajustes extras para telas muito pequenas */
   .service-hero-title {
     font-size: 24px;
@@ -1635,7 +1651,6 @@
    LANDSCAPE MOBILE (altura menor)
    ======================================== */
 @media (max-height: 600px) and (orientation: landscape) {
-  
   .service-hero {
     min-height: auto;
     padding: 100px 0 40px;
@@ -1673,5 +1688,163 @@
   *:focus-visible {
     outline: 3px solid var(--color-primary);
     outline-offset: 2px;
+  }
+}
+
+/* ==========================================================================
+   10. MEGA MENU - RESPONSIVO
+   ========================================================================== */
+
+/* ========================================
+   MEGA MENU - TABLET (≤1024px)
+   ======================================== */
+@media (max-width: 1024px) {
+  .mega-menu-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .mega-menu-featured {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ========================================
+   MEGA MENU - MOBILE (≤768px)
+   ======================================== */
+@media (max-width: 768px) {
+  .mega-menu {
+    display: none !important;
+  }
+  
+  /* Mobile menu toggle visível */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  /* Esconde nav desktop */
+  .nav-list {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   11. MODAL - RESPONSIVO (DO GLOBALS.CSS)
+   ========================================================================== */
+
+/* ========================================
+   MODAL - TABLET (≤1024px)
+   ======================================== */
+@media (max-width: 1024px) {
+  .modal-content {
+    padding: 50px 36px 36px;
+  }
+
+  .modal-header h2 {
+    font-size: 30px;
+  }
+}
+
+/* ========================================
+   MODAL - MOBILE (≤767px)
+   ======================================== */
+@media (max-width: 767px) {
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-container {
+    border-radius: 24px 24px 0 0;
+    max-height: 95vh;
+    width: 100%;
+  }
+
+  .modal-content {
+    padding: 60px 24px 32px;
+  }
+
+  .modal-close {
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-close ion-icon {
+    font-size: 24px;
+  }
+
+  .modal-header {
+    margin-bottom: 32px;
+  }
+
+  .modal-header h2 {
+    font-size: 26px;
+  }
+
+  .modal-header p {
+    font-size: 15px;
+  }
+
+  /* Uma coluna em mobile */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-form {
+    gap: 20px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+
+  .btn-submit {
+    padding: 14px 24px;
+  }
+
+  .form-message {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================================
+   12. SUBMENU MATERIALIDADE - RESPONSIVO
+   ========================================================================== */
+
+/* ========================================
+   MATERIALIDADE - MOBILE (≤767px)
+   ======================================== */
+@media (max-width: 767px) {
+  .materiality-btn {
+    width: 97%;
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   MATERIALIDADE - DESKTOP (≥1024px)
+   ======================================== */
+@media (min-width: 1024px) {
+  .materiality-submenu {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 12px 16px;
+    width: auto;
+  }
+
+  .materiality-btn {
+    padding: 10px 18px;
+    font-size: 0.85rem;
   }
 }
