@@ -2,6 +2,8 @@
 
 Site institucional da **Gália Consultoria e Treinamentos**, desenvolvido com **HTML, CSS e JavaScript puro**, focado em performance, clareza visual e boa organização de frontend.
 
+[Visite aqui a página](https://rogermorony.github.io/G-lia-Consultoria-e-Treinamentos)
+
 ---
 
 ## 📁 Estrutura do Projeto
