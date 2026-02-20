@@ -62,120 +62,107 @@
 
 <body>
 
-    <!-- ========================================
+  <!-- ========================================
        HEADER:
        ======================================== -->
-    <header class="site-header" role="banner">
-        <div class="container header-wrap">
+  <header class="site-header" role="banner">
+    <div class="container header-wrap">
 
-            <!-- LOGO -->
-            <a href="index.html" aria-label="Ir para o início">
-                <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria"
-                    class="brand-logo">
+      <!-- LOGO -->
+      <a href="index.html" aria-label="Ir para o início">
+        <img src="src/imagens/galia-consultoria-e-treinamentos-2.png" alt="Logo Gália Consultoria" class="brand-logo">
+      </a>
+
+      <!-- BOTÃO HAMBURGUER -->
+      <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav id="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-list">
+
+          <!-- ITEM COM MEGA MENU -->
+          <li class="nav-item-dropdown mega-menu-trigger">
+            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
+              role="button">
+              Serviços
             </a>
 
-            <!-- BOTÃO HAMBURGUER -->
-            <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <!-- MEGA MENU -->
+            <div class="mega-menu" aria-label="Submenu de Serviços" role="menu">
+              <div class="mega-menu-content">
 
-            <!-- MENU DE NAVEGAÇÃO -->
-            <nav id="nav-principal" aria-label="Navegação principal">
-                <ul class="nav-list">
+                <!-- COLUNA 1: Sustentabilidade e ESG -->
+                <div class="mega-menu-column">
+                  <h2 class="mega-menu-title">Sustentabilidade e ESG</h2>
+                  <ul class="mega-menu-list">
+                    <li><a href="diagnostico-situacional-em-sustentabilidade-e-esg.html">Diagnóstico Situacional em
+                        Sustentabilidade e ESG</a></li>
+                    <li><a href="mapeamento-de-impactos-analise-e-revisao-de-materialidade.html">Mapeamento de Impactos,
+                        Análise de Materialidade</a></li>
+                    <li><a href="analise-de-risco-e-oportunidades-esg.html">Análise de Risco e Oportunidade ESG</a></li>
+                    <li><a href="mapeamento-priorizacao-e-engajamento-de-stakeholders.html">Mapeamento, Priorização e
+                        Engajamento de Stakeholders</a></li>
+                    <li><a href="plano-estrategico-de-sustentabilidade-e-roadmap-esg.html">Plano Estratégico de
+                        Sustentabilidade e Roadmap ESG</a></li>
+                    <li><a href="politica-de-sustentabilidade.html">Política de Sustentabilidade</a></li>
+                  </ul>
+                </div>
 
-                    <!-- ITEM COM MEGA MENU -->
-                    <li class="nav-item-dropdown mega-menu-trigger">
-                        <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
-                            role="button">
-                            Serviços
-                        </a>
+                <!-- COLUNA 2: Mais ESG -->
+                <div class="mega-menu-column">
+                  <ul class="mega-menu-list" style="margin-top: 2.5rem;">
+                    <li><a href="estruturacao-e-avaliacao-de-indicadores-de-desempenho-em-esg.html">Estrutura e Avaliação de
+                        Indicadores de Desempenho em ESG</a></li>
+                    <li><a href="estruturacao-de-modelo-de-governanca-em-sustentabilidade.html">Estruturação de Modelo de Governança
+                        em Sustentabilidade</a></li>
+                    <li><a href="relatorios-de-sustentabilidade.html">Relatórios de Sustentabilidade</a></li>
+                    <li><a href="elaboracao-de-projetos-esg.html">Elaboração de Projeto ESG</a></li>
+                    <li><a href="estruturas-diretrizes-e-padroes.html">Estruturas, Diretrizes e Padrões (GRI, SASB, ODS,
+                        Direitos Humanos e Outros)</a></li>
+                  </ul>
 
-                        <!-- MEGA MENU -->
-                        <div class="mega-menu" aria-label="Submenu de Serviços" role="menu">
-                            <div class="mega-menu-content">
+                  <h3 class="mega-menu-title" style="margin-top: 1.5rem;">Investimento Social</h3>
+                  <ul class="mega-menu-list">
+                    <li><a href="investimento-social-estrategico.html">Investimento Social Estratégico</a></li>
+                  </ul>
+                </div>
 
-                                <!-- COLUNA 1: Sustentabilidade e ESG -->
-                                <div class="mega-menu-column">
-                                    <h2 class="mega-menu-title">Sustentabilidade e ESG</h2>
-                                    <ul class="mega-menu-list">
-                                        <li><a href="diagnostico-situacional-em-sustentabilidade-e-esg.html">Diagnóstico
-                                                Situacional em
-                                                Sustentabilidade e ESG</a></li>
-                                        <li><a href="mapeamento-de-impactos-analise-e-revisao-de-materialidade.html">Mapeamento
-                                                de Impactos,
-                                                Análise de Materialidade</a></li>
-                                        <li><a href="analise-de-risco-e-oportunidades-esg.html">Análise de Risco e
-                                                Oportunidade ESG</a></li>
-                                        <li><a href="mapeamento-priorizacao-e-engajamento-de-stakeholders.html">Mapeamento,
-                                                Priorização e
-                                                Engajamento de Stakeholders</a></li>
-                                        <li><a href="plano-estrategico-de-sustentabilidade-e-roadmap-esg.html">Plano
-                                                Estratégico de
-                                                Sustentabilidade e Roadmap ESG</a></li>
-                                        <li><a href="politica-de-sustentabilidade.html">Política de Sustentabilidade</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                <!-- COLUNA 3: FEATURED CARD -->
+                <div class="mega-menu-column mega-menu-featured">
+                  <div class="featured-card">
+                    <img src="src/imagens/cultura.jpg" alt="Gália Consultoria ESG">
+                    <div class="featured-content">
+                      <h3>Cultura e Aprendizagem</h3>
+                      <p>Sustentabilidade, ESG e Investimento Social Estratégico com soluções personalizadas para sua
+                        organização.</p>
+                      <a href="cultura-e-aprendizagem.html" class="featured-btn">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
 
-                                <!-- COLUNA 2: Mais ESG -->
-                                <div class="mega-menu-column">
-                                    <ul class="mega-menu-list" style="margin-top: 2.5rem;">
-                                        <li><a href="estrutura-avaliacao-indicadores-desempenho-esg.html">Estrutura e
-                                                Avaliação de
-                                                Indicadores de Desempenho em ESG</a></li>
-                                        <li><a href="estrutura-modelo-governanca-sustentabilidade.html">Estruturação de
-                                                Modelo de Governança
-                                                em Sustentabilidade</a></li>
-                                        <li><a href="relatorios-de-sustentabilidade.html">Relatórios de
-                                                Sustentabilidade</a></li>
-                                        <li><a href="elaboracao-de-projetos-esg.html">Elaboração de Projeto ESG</a></li>
-                                        <li><a href="estruturas-diretrizes-padroes.html">Estruturas, Diretrizes e
-                                                Padrões (GRI, SASB, ODS,
-                                                Direitos Humanos e Outros)</a></li>
-                                    </ul>
+              </div>
+            </div>
 
-                                    <h3 class="mega-menu-title" style="margin-top: 1.5rem;">Investimento Social</h3>
-                                    <ul class="mega-menu-list">
-                                        <li><a href="investimento-social-estrategico.html">Investimento Social
-                                                Estratégico</a></li>
-                                    </ul>
-                                </div>
+          </li>
 
-                                <!-- COLUNA 3: FEATURED CARD -->
-                                <div class="mega-menu-column mega-menu-featured">
-                                    <div class="featured-card">
-                                        <img src="src/imagens/landscape.jpg" alt="Gália Consultoria ESG">
-                                        <div class="featured-content">
-                                            <h3>Cultura e Aprendizagem</h3>
-                                            <p>Sustentabilidade, ESG e Investimento Social Estratégico com soluções
-                                                personalizadas para sua
-                                                organização.</p>
-                                            <a href="cultura-e-aprendizagem.html" class="featured-btn">Ver mais</a>
-                                        </div>
-                                    </div>
-                                </div>
+          <li style="display: none"><a href="#insights" class="nav-link">Insights</a></li>
+          <li><a href="quem-somos.html" class="nav-link">Quem somos</a></li>
+          <a href="https://wa.me/5543988497777?text=Olá! Gostaria de saber mais sobre consultoria e treinamentos da Gália."
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp"
+            aria-label="Falar no WhatsApp">
 
-                            </div>
-                        </div>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <span>Fale Conosco</span>
+          </a>
 
-                    </li>
-
-                    <li><a href="#insights" class="nav-link">Insights</a></li>
-                    <li><a href="quem-somos.html" class="nav-link">Quem somos</a></li>
-                    <a href="https://wa.me/5543988497777?text=Olá! Gostaria de saber mais sobre consultoria e treinamentos da Gália."
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-whatsapp"
-                        aria-label="Falar no WhatsApp">
-
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                        <span>Fale Conosco</span>
-                    </a>
-
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main>
 
@@ -501,7 +488,7 @@
                         <div class="footer-column">
                             <h4>Empresa</h4>
                             <ul>
-                                <li><a href="insights.html">Insights</a></li>
+                                <li style="display: none"><a href="insights.html">Insights</a></li>
                                 <li><a href="quem-somos.html">Quem somos</a></li>
                                 <li><a href="politica-privacidade.html">Política de privacidade</a></li>
                             </ul>

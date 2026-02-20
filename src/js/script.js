@@ -97,11 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (dropdownToggle && navItem) {
     dropdownToggle.addEventListener("click", function (e) {
-      // Se for mobile, abre o submenu em vez de navegar
-      if (window.innerWidth <= 767) {
+      if (window.innerWidth <= 768) {
         e.preventDefault();
         e.stopPropagation();
-        navItem.classList.toggle("active");
+        navItem.classList.toggle("mobile-submenu-open");
       }
     });
   }
