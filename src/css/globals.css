@@ -558,6 +558,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
+  z-index: 10;
 }
 
 .solution-card {

@@ -106,8 +106,7 @@
 
           <!-- ITEM COM MEGA MENU -->
           <li class="nav-item-dropdown mega-menu-trigger">
-            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false"
-              role="button">
+            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false" role="button">
               Serviços
             </a>
 
@@ -135,9 +134,11 @@
                 <!-- COLUNA 2: Mais ESG -->
                 <div class="mega-menu-column">
                   <ul class="mega-menu-list" style="margin-top: 2.5rem;">
-                    <li><a href="estruturacao-e-avaliacao-de-indicadores-de-desempenho-em-esg.html">Estrutura e Avaliação de
+                    <li><a href="estruturacao-e-avaliacao-de-indicadores-de-desempenho-em-esg.html">Estrutura e
+                        Avaliação de
                         Indicadores de Desempenho em ESG</a></li>
-                    <li><a href="estruturacao-de-modelo-de-governanca-em-sustentabilidade.html">Estruturação de Modelo de Governança
+                    <li><a href="estruturacao-de-modelo-de-governanca-em-sustentabilidade.html">Estruturação de Modelo
+                        de Governança
                         em Sustentabilidade</a></li>
                     <li><a href="relatorios-de-sustentabilidade.html">Relatórios de Sustentabilidade</a></li>
                     <li><a href="elaboracao-de-projetos-esg.html">Elaboração de Projeto ESG</a></li>
@@ -278,7 +279,7 @@
         <div class="value-visual">
           <div class="decorative-curve"></div>
           <div class="map-container">
-            <video class="map-video" autoplay loop muted playsinline poster="src/imagens/map-brazil-poster.webp">
+            <video class="map-video" autoplay loop muted playsinline poster="src/imagens/map-brazil.mp4">
               <source src="src/imagens/map-brazil.mp4" type="video/mp4">
               Seu navegador não suporta vídeos HTML5.
             </video>
@@ -411,14 +412,18 @@
                 <a href="mapeamento-de-impactos-analise-e-revisao-de-materialidade.html">Mapeamento de Impactos, Análise
                   de Materialidade</a>
                 <a href="analise-de-risco-e-oportunidades-esg.html">Análise de Risco e Oportunidade ESG</a>
-                <a href="mapeamento-priorizacao-e-engajamento-de-stakeholders.html">Mapeamento, Priorização e Engajamento de
+                <a href="mapeamento-priorizacao-e-engajamento-de-stakeholders.html">Mapeamento, Priorização e
+                  Engajamento de
                   Stakeholders</a>
-                <a href="plano-estrategico-de-sustentabilidade-e-roadmap-esg.html">Plano Estratégico de Sustentabilidade e
+                <a href="plano-estrategico-de-sustentabilidade-e-roadmap-esg.html">Plano Estratégico de Sustentabilidade
+                  e
                   Roadmap ESG</a>
                 <a href="politica-de-sustentabilidade.html">Política de Sustentabilidade</a>
-                <a href="estruturacao-e-avaliacao-de-indicadores-de-desempenho-em-esg.html">Estrutura e Avaliação de Indicadores de
+                <a href="estruturacao-e-avaliacao-de-indicadores-de-desempenho-em-esg.html">Estrutura e Avaliação de
+                  Indicadores de
                   Desempenho em ESG</a>
-                <a href="estruturacao-de-modelo-de-governanca-em-sustentabilidade.html">Estruturação de Modelo de Governança em
+                <a href="estruturacao-de-modelo-de-governanca-em-sustentabilidade.html">Estruturação de Modelo de
+                  Governança em
                   Sustentabilidade</a>
                 <a href="relatorios-de-sustentabilidade.html">Relatórios de Sustentabilidade</a>
                 <a href="elaboracao-de-projetos-esg.html">Elaboração de Projeto ESG</a>
@@ -599,18 +604,18 @@
         </div>
 
         <!-- Formulário -->
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+        <form id="contact-form" class="contact-form" action="backend/formulario.php" method="POST">
 
           <!-- Nome e Sobrenome -->
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">Nome *</label>
-              <input type="text" id="firstName" name="firstName" required placeholder="Seu nome">
+              <input type="text" id="firstName" name="firstName" placeholder="Seu nome">
             </div>
 
             <div class="form-group">
               <label for="lastName">Sobrenome *</label>
-              <input type="text" id="lastName" name="lastName" required placeholder="Seu sobrenome">
+              <input type="text" id="lastName" name="lastName" placeholder="Seu sobrenome">
             </div>
           </div>
 
@@ -618,41 +623,27 @@
           <div class="form-row">
             <div class="form-group">
               <label for="company">Empresa *</label>
-              <input type="text" id="company" name="company" required placeholder="Nome da empresa">
+              <input type="text" id="company" name="company" placeholder="Nome da empresa">
             </div>
 
             <div class="form-group">
               <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required placeholder="seu@email.com">
+              <input type="text" id="email" name="email" placeholder="seu@email.com">
             </div>
           </div>
 
-          <!-- Telefone e País -->
+          <!-- Telefone -->
           <div class="form-row">
             <div class="form-group">
               <label for="phone">Telefone</label>
               <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
-            </div>
-
-            <div class="form-group">
-              <label for="country">País *</label>
-              <select id="country" name="country" required>
-                <option value="">Selecione</option>
-                <option value="BR" selected>Brasil</option>
-                <option value="PT">Portugal</option>
-                <option value="US">Estados Unidos</option>
-                <option value="AR">Argentina</option>
-                <option value="CL">Chile</option>
-                <option value="MX">México</option>
-                <option value="OTHER">Outro</option>
-              </select>
             </div>
           </div>
 
           <!-- Mensagem -->
           <div class="form-group">
             <label for="message">Qual informação você está buscando? *</label>
-            <textarea id="message" name="message" rows="5" required
+            <textarea id="message" name="message" rows="5"
               placeholder="Descreva brevemente sua necessidade..."></textarea>
           </div>
 
@@ -663,12 +654,12 @@
 
           <!-- Mensagem de sucesso (oculta) -->
           <div id="form-success" class="form-message form-success" style="display: none;">
-            ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
+            Mensagem enviada com sucesso! Entraremos em contato em breve.
           </div>
 
           <!-- Mensagem de erro (oculta) -->
           <div id="form-error" class="form-message form-error" style="display: none;">
-            ✗ Erro ao enviar mensagem. Por favor, tente novamente.
+            Erro ao enviar mensagem. Por favor, tente novamente.
           </div>
 
         </form>
