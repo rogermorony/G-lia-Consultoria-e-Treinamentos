@@ -1,6 +1,6 @@
 # Gália Consultoria e Treinamentos
 
-![Capa do Projeto](src/images/cover-galia.png)
+![Capa do Projeto](src/imagens/cover-galia.png)
 
 Site institucional da **Gália Consultoria e Treinamentos**, desenvolvido com **HTML, CSS e JavaScript puro**, focado em performance, clareza visual e boa organização de frontend.
 
